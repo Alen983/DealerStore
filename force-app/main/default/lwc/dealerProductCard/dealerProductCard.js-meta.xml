@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Dealer Product Card</masterLabel>
+    <description>Shark-style product card for category and search results</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="item" type="String" label="Product Item" description="Search result item from the product grid data provider"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

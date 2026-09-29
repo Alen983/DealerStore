@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_Reason__c</fullName>
+    <description>Buyer-selected reason for the cancellation request.</description>
+    <externalId>false</externalId>
+    <label>Cancellation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Wrong quantity</fullName>
+                <default>false</default>
+                <label>Wrong quantity</label>
+            </value>
+            <value>
+                <fullName>Duplicate order</fullName>
+                <default>false</default>
+                <label>Duplicate order</label>
+            </value>
+            <value>
+                <fullName>Customer cancelled</fullName>
+                <default>false</default>
+                <label>Customer cancelled</label>
+            </value>
+            <value>
+                <fullName>Pricing issue</fullName>
+                <default>false</default>
+                <label>Pricing issue</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

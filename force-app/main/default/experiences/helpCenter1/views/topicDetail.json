@@ -1,0 +1,54 @@
+{
+  "appPageId" : "1612df9b-4eba-415b-a526-941d4d88f5d3",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "8fc2d2e1-a6f8-4403-8264-476121b599bb",
+  "label" : "Topic Detail",
+  "regions" : [ {
+    "id" : "3ca3cdbe-12bb-4620-93f7-1dd011c9ab86",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "af4455fa-7367-4a26-92fd-81aa84216b66",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "showTopicsMetric" : true,
+        "title" : "Related Topics",
+        "topicId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:relatedTopics",
+      "id" : "9cb54f5e-6e56-4c64-bad8-1c8f152d8b09",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c9b4d812-ab1f-4e8f-88f7-c531a9303081",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "b20fd94b-38ed-4ec6-a37e-05aef8e5acd0",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "{!Record.Description}",
+        "title" : "{!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "28bd644e-b8f2-4170-ac77-a227e202bd76",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f45c74ba-e84f-4941-abd0-ccbcca3b672a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "topic"
+}

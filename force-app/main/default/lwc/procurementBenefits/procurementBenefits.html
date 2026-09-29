@@ -1,0 +1,100 @@
+<template>
+    <div class="mpb-page">
+        <header class="mpb-header">
+            <h1 class="mpb-header__title">My Procurement Benefits</h1>
+            <p class="mpb-header__subtitle">Track your wholesale savings and discount tier</p>
+        </header>
+
+        <template lwc:if={isLoading}>
+            <div class="mpb-loading" role="status">
+                <div class="mpb-skeleton mpb-skeleton--hero"></div>
+                <div class="mpb-skeleton-row">
+                    <div class="mpb-skeleton mpb-skeleton--stat"></div>
+                    <div class="mpb-skeleton mpb-skeleton--stat"></div>
+                </div>
+                <div class="mpb-skeleton-row">
+                    <div class="mpb-skeleton mpb-skeleton--tier"></div>
+                    <div class="mpb-skeleton mpb-skeleton--tier"></div>
+                    <div class="mpb-skeleton mpb-skeleton--tier"></div>
+                </div>
+            </div>
+        </template>
+
+        <template lwc:elseif={hasError}>
+            <div class="mpb-error" role="alert">
+                Unable to load your procurement benefits. Please refresh the page or try again later.
+            </div>
+        </template>
+
+        <template lwc:else>
+            <section class="mpb-hero">
+                <div class="mpb-hero__content">
+                    <p class="mpb-hero__label">You've saved</p>
+                    <p class="mpb-hero__amount">{formattedSavings}</p>
+                    <p class="mpb-hero__subtitle">
+                        through automatic wholesale bulk order discounts
+                    </p>
+                </div>
+                <template lwc:if={currentTierDiscount}>
+                    <span class="mpb-hero__badge">{currentTierLabel}</span>
+                </template>
+            </section>
+
+            <template lwc:if={showEmptyState}>
+                <div class="mpb-empty">
+                    <p class="mpb-empty__title">Start saving with bulk orders</p>
+                    <p class="mpb-empty__text">
+                        Wholesale discounts unlock as your total procurement spend reaches program tiers.
+                    </p>
+                </div>
+            </template>
+
+            <section class="mpb-stats">
+                <article class="mpb-stat-card">
+                    <div class="mpb-stat-card__icon mpb-stat-card__icon--tier">
+                        <lightning-icon icon-name="utility:award" size="small" alternative-text="Tier"></lightning-icon>
+                    </div>
+                    <div class="mpb-stat-card__body">
+                        <p class="mpb-stat-card__label">Current discount tier</p>
+                        <p class="mpb-stat-card__value">{currentTierLabel}</p>
+                    </div>
+                </article>
+
+                <article class="mpb-stat-card">
+                    <div class="mpb-stat-card__icon mpb-stat-card__icon--order">
+                        <lightning-icon icon-name="utility:money" size="small" alternative-text="Spend"></lightning-icon>
+                    </div>
+                    <div class="mpb-stat-card__body">
+                        <p class="mpb-stat-card__label">Total procurement spend</p>
+                        <p class="mpb-stat-card__value">{formattedTotalSpend}</p>
+                    </div>
+                </article>
+            </section>
+
+            <p class="mpb-hint">{tierHint}</p>
+
+            <section class="mpb-section">
+                <h2 class="mpb-heading">Wholesale discount program</h2>
+                <div class="mpb-tiers">
+                    <template for:each={tierCards} for:item="tier">
+                        <article key={tier.key} class={tier.cardClass}>
+                            <template lwc:if={tier.isCurrent}>
+                                <span class="mpb-tier__pill">Your tier</span>
+                            </template>
+                            <p class="mpb-tier__name">{tier.name}</p>
+                            <p class="mpb-tier__threshold">{tier.thresholdLabel}</p>
+                            <p class="mpb-tier__discount">
+                                {tier.discount}<span>% OFF</span>
+                            </p>
+                        </article>
+                    </template>
+                </div>
+            </section>
+
+            <div class="mpb-actions">
+                <a class="mpb-btn mpb-btn--primary" href={shopUrl}>Start a bulk order</a>
+                <a class="mpb-btn mpb-btn--secondary" href={programUrl}>View program details</a>
+            </div>
+        </template>
+    </div>
+</template>

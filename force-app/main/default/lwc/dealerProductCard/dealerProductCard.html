@@ -1,0 +1,53 @@
+<template>
+    <article class="card">
+        <a class="card-body" href={productUrl} onclick={handleProductClick}>
+            <div class="img-wrap">
+                <template lwc:if={badgeLabel}>
+                    <span class={badgeClass}>{badgeLabel}</span>
+                </template>
+                <template lwc:if={imageUrl}>
+                    <img class="img" src={imageUrl} alt={imageAlt} loading="lazy" />
+                </template>
+            </div>
+
+            <h3 class="title">{productName}</h3>
+
+            <template lwc:if={sku}>
+                <p class="model">Model: {sku}</p>
+            </template>
+
+            <div class="rating" aria-hidden="true">★★★★★  4.8  (54)  ⌄</div>
+
+            <ul class="bullets">
+                <template for:each={features} for:item="feature">
+                    <li key={feature}>{feature}</li>
+                </template>
+            </ul>
+
+            <p class="promo">Exclusive offer applied in cart</p>
+
+            <div class="price-row">
+                <template lwc:if={priceLoading}>
+                    <span class="price price--loading">...</span>
+                </template>
+                <template lwc:else>
+                    <template lwc:if={negotiatedPrice}>
+                        <span class="price">{displayNegotiatedPrice}</span>
+                        <template lwc:if={showListingPrice}>
+                            <span class="price-was">{displayListingPrice}</span>
+                        </template>
+                    </template>
+                </template>
+            </div>
+        </a>
+
+        <button
+            class="cta"
+            type="button"
+            disabled={addToCartDisabled}
+            onclick={handleAddToCart}
+        >
+            {addToCartLabel}
+        </button>
+    </article>
+</template>

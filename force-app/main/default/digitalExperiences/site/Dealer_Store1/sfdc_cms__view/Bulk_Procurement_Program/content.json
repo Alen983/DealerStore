@@ -1,0 +1,109 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Bulk Procurement Program",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"64841433-1ea4-4d3f-af2b-6ffd5e150a1c\",\"columns\":[{\"UUID\":\"ae260744-f5e9-4c8b-a42f-3e440b7c457f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Bulk Procurement & Wholesale Discount Program",
+                "textAlign" : "center",
+                "textDecoration" : "{\"bold\":true}",
+                "textDisplayInfo" : "{\"textStyle\":\"heading-large\",\"headingTag\":\"h1\",\"enableOverride\":false}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "04be8183-44d4-46d3-83d3-162006e2fca2",
+              "type" : "component"
+            } ],
+            "id" : "ae260744-f5e9-4c8b-a42f-3e440b7c457f",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "64841433-1ea4-4d3f-af2b-6ffd5e150a1c",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"8a8acf13-6767-404a-936f-696adb1e0964\",\"columns\":[{\"UUID\":\"c2353077-1c16-45a6-803e-3240301a442d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<div class=\"bpp-page\">\n    <p class=\"bpp-intro\">Dealer Store enables business buyers to procure products in bulk through a self-service B2B Commerce portal. Your discount tier is based on <strong>total procurement spend</strong> across all completed orders — the more you buy over time, the greater your wholesale savings.</p>\n\n    <section class=\"bpp-section\">\n        <h2 class=\"bpp-heading\">Tiered Wholesale Discounts</h2>\n        <div class=\"bpp-tiers\">\n            <div class=\"bpp-tier bpp-tier--basic\">\n                <p class=\"bpp-tier-name\">Basic</p>\n                <p class=\"bpp-tier-threshold\">$2,500+ total spend</p>\n                <p class=\"bpp-tier-discount\">5% <span>OFF</span></p>\n            </div>\n            <div class=\"bpp-tier bpp-tier--premium\">\n                <p class=\"bpp-tier-name\">Premium</p>\n                <p class=\"bpp-tier-threshold\">$5,000+ total spend</p>\n                <p class=\"bpp-tier-discount\">10% <span>OFF</span></p>\n            </div>\n            <div class=\"bpp-tier bpp-tier--elite\">\n                <p class=\"bpp-tier-name\">Elite</p>\n                <p class=\"bpp-tier-threshold\">$10,000+ total spend</p>\n                <p class=\"bpp-tier-discount\">15% <span>OFF</span></p>\n            </div>\n        </div>\n    </section>\n\n    <section class=\"bpp-section\">\n        <h2 class=\"bpp-heading\">Program Benefits</h2>\n        <ul class=\"bpp-benefit-grid\">\n            <li>Self-service bulk ordering experience</li>\n            <li>Tier upgrades based on lifetime procurement spend</li>\n            <li>Transparent pricing — no coupon codes</li>\n            <li>Buyer-specific product access by business type</li>\n            <li>Faster procurement for retailers and distributors</li>\n        </ul>\n    </section>\n\n    <section class=\"bpp-section\">\n        <h2 class=\"bpp-heading\">How It Works</h2>\n        <ol class=\"bpp-steps\">\n            <li>Log in as a business buyer</li>\n            <li>Browse products for your account</li>\n            <li>Place bulk orders through the storefront</li>\n            <li>Your total spend accumulates across all orders</li>\n            <li>Unlock Premium and Elite tiers as spend grows</li>\n            <li>Track savings and tier status on My Procurement Benefits</li>\n        </ol>\n    </section>\n\n    <section class=\"bpp-section\">\n        <h2 class=\"bpp-heading\">Supported Buyer Types</h2>\n        <div class=\"bpp-tags\">\n            <span class=\"bpp-tag\">Electronics Retailers</span>\n            <span class=\"bpp-tag\">Sports Retailers</span>\n            <span class=\"bpp-tag\">Multi-category Wholesale Distributors</span>\n        </div>\n    </section>\n\n    <p class=\"bpp-footer\">Dealer Store's Bulk Procurement Program simplifies inventory replenishment and rewards long-term buyers through automated, tiered wholesale discounts powered by Salesforce B2B Commerce.</p>\n</div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "a5da73bb-4607-4d11-8bc6-f6593ae9bdac",
+              "type" : "component"
+            } ],
+            "id" : "c2353077-1c16-45a6-803e-3240301a442d",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8a8acf13-6767-404a-936f-696adb1e0964",
+          "type" : "component"
+        } ],
+        "id" : "7449ce03-803c-463b-8249-48c88c9cd379",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Bulk Procurement Program",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "605f7723-4949-4e42-b16c-6d0e5b0b1b8f",
+          "type" : "component"
+        } ],
+        "id" : "79c8a0a5-cb25-4f07-8845-1b9009f6eace",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "698b55a4-86fe-4fb3-a3ef-7c32d26e8586",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-bulk-procurement-program"
+  },
+  "urlName" : "bulk-procurement-program"
+}

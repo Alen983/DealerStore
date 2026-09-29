@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Order Cancellation Request</masterLabel>
+    <description>Allows buyers to submit an order cancellation request from the order detail page.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property
+                name="orderSummaryId"
+                type="String"
+                label="Order Summary Id"
+                description="Order Summary record Id from the order detail route."
+            />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
