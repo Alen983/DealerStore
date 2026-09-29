@@ -1,0 +1,42 @@
+<template>
+    <lightning-card title="Upcoming Recurring Orders">
+        <div class="slds-p-around_medium">
+
+            <template if:true={orderGroups.length}>
+                <template for:each={orderGroups} for:item="group">
+                    <div key={group.contractId} class="slds-box slds-m-bottom_medium">
+                        <p class="slds-text-heading_small slds-m-bottom_small">
+                            {group.frequency} Recurring Order
+                        </p>
+
+                        <template for:each={group.lineItems} for:item="item">
+                            <div key={item.id} class="slds-grid slds-grid_align-spread slds-p-vertical_x-small slds-border_bottom">
+                                <div>
+                                    <p>{item.productName}</p>
+                                    <p class="slds-text-body_small slds-text-color_weak">
+                                        Qty: {item.quantity} · ${item.price} each
+                                    </p>
+                                </div>
+                                <div class="slds-text-align_right">
+                                    <p class="slds-text-body_small slds-text-color_weak">Next Delivery</p>
+                                    <p>{item.nextDelivery}</p>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </template>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">Unable to load upcoming deliveries.</p>
+            </template>
+
+            <template if:false={orderGroups.length}>
+                <template if:false={error}>
+                    <p class="slds-text-body_regular slds-text-color_weak">No upcoming recurring orders.</p>
+                </template>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>
