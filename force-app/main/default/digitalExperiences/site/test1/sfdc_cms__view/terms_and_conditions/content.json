@@ -1,0 +1,101 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Terms And Conditions",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"ac3690d6-a862-4164-8360-5098f8f644fe\",\"columns\":[{\"UUID\":\"a6e701dc-f14b-4718-a607-a30688dce406\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "large",
+                "text" : "Terms and Conditions",
+                "textAlign" : "left",
+                "textDecoration" : "{}",
+                "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\",\"enableOverride\":false}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "c86a509c-b214-428a-83c8-57471c80ada6",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "dxpStyle" : {
+                  "padding" : {
+                    "bottom" : "2rem",
+                    "left" : "0rem",
+                    "right" : "0rem",
+                    "top" : "1rem"
+                  }
+                },
+                "imageInfos" : "",
+                "richTextValue" : "<p>Effective Date: [Policy Effective Date]</p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "1889c910-2b72-4a15-a07f-14882116b3dc",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<p>Disclaimer: This is an automatically generated space intended as a starting point to help you add terms and conditions for the use of your site and services. You are responsible for the accuracy and compliance of any such terms with all applicable laws and regulations.</p>"
+              },
+              "definition" : "community_builder:richTextEditor",
+              "id" : "003675b4-0b8f-4f43-8651-149a54829b5f",
+              "type" : "component"
+            } ],
+            "id" : "a6e701dc-f14b-4718-a607-a30688dce406",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "ac3690d6-a862-4164-8360-5098f8f644fe",
+          "type" : "component"
+        } ],
+        "id" : "c2b4abb4-d1b2-4cda-97f0-5c992a7e0860",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Terms And Conditions",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "fa2fede8-7bb9-4987-b5da-c4433f63e462",
+          "type" : "component"
+        } ],
+        "id" : "3a103f3d-3cbd-403d-a555-4060bc5a23ce",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "20b4adf7-b41e-4191-9757-b187013b4ce7",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "terms-and-conditions"
+  },
+  "urlName" : "terms-and-conditions"
+}

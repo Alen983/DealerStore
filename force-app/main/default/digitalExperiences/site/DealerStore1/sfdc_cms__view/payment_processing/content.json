@@ -1,0 +1,118 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Payment Processing",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"0ed3b4dd-a466-4e5c-97a6-3cf00f95f47b\",\"columns\":[{\"UUID\":\"d82a694e-c71e-403c-9070-bda88f1c9b94\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "commerce_unified_checkout:processingIndicator",
+                  "id" : "17e9ac58-58f2-4558-93f6-28475686c479",
+                  "type" : "component"
+                } ],
+                "id" : "cc212dea-372b-4c27-8726-ae33b9f21f47",
+                "name" : "processingIndicator",
+                "title" : "processingIndicator",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "Payment Processing",
+                    "textAlign" : "center",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-large\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "2839f76f-ed1d-4323-b9bf-bb3f84406a7b",
+                  "type" : "component"
+                } ],
+                "id" : "1a0dbd70-a550-499a-8300-7ea2742093cc",
+                "name" : "paymentProcessingHeader",
+                "title" : "paymentProcessingHeader",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "small",
+                    "text" : "This only takes a few seconds. Don’t refresh or leave this page.",
+                    "textAlign" : "center",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "5708ba90-8c17-4ffe-8cd8-d724042af3d9",
+                  "type" : "component"
+                } ],
+                "id" : "b468d9b6-d0be-4630-ae99-f8c3d3ff7fdb",
+                "name" : "informationalText",
+                "title" : "informationalText",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:paymentProcessing",
+              "id" : "4dba141a-4981-4ea8-80c6-08431cb51843",
+              "type" : "component"
+            } ],
+            "id" : "d82a694e-c71e-403c-9070-bda88f1c9b94",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0ed3b4dd-a466-4e5c-97a6-3cf00f95f47b",
+          "type" : "component"
+        } ],
+        "id" : "061b8d02-47d0-4956-8c0e-61dc82998491",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "dd95e873-158d-42b3-b0f0-8590fc905d8c",
+          "type" : "component"
+        } ],
+        "id" : "115908a6-9091-4c02-af07-8735b39f7169",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "e2aff3ce-6ad2-49d2-b5b8-ffc7a05829b0",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "External",
+    "viewType" : "payment-processing"
+  },
+  "urlName" : "payment-processing"
+}

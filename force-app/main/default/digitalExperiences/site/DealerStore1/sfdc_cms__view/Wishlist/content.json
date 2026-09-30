@@ -1,0 +1,328 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Wishlist",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"db11853b-43ef-4da2-ad1f-f2d0e55efaf8\",\"columns\":[{\"UUID\":\"35869e6a-3106-40ce-bf17-1ea4bad8e131\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "wishlistsData" : "{!Wishlists}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "xx-small",
+                    "text" : "My List",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-large\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "79869e8f-2582-46fe-98ca-38da716c9b29",
+                  "type" : "component"
+                } ],
+                "id" : "61443320-9310-405a-876c-8d1350067bab",
+                "name" : "emptyHeaderLabel",
+                "title" : "emptyHeaderLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "xx-small",
+                    "paddingVertical" : "none",
+                    "text" : "0 items",
+                    "textAlign" : "left",
+                    "textColor" : "#444444",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"heading-medium\",\"enableOverride\":true}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "518a6fed-9c9f-44be-8478-d1db3adcaeec",
+                  "type" : "component"
+                } ],
+                "id" : "f6344385-1fd0-467c-9561-a901b2b0556d",
+                "name" : "emptyHeaderCount",
+                "title" : "emptyHeaderCount",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "My List is empty.",
+                    "textAlign" : "center",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "d01a5406-e832-4ed6-91ea-1d87d6e021d8",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "When you add products to My List, they'll appear here.",
+                    "textAlign" : "center",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"heading-small\",\"enableOverride\":true}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "59e49170-a3d7-4053-9514-725ad36145a9",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Continue Shopping",
+                    "type" : "primary",
+                    "url" : "/"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "22508e7c-0870-456d-aaec-9679d262a607",
+                  "type" : "component"
+                } ],
+                "id" : "5f41fcb0-ff76-40ee-8e05-c208c4922be3",
+                "name" : "emptyBody",
+                "title" : "emptyBody",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "dxpStyle" : {
+                      "margin" : {
+                        "bottom" : "1.5rem",
+                        "left" : "0rem",
+                        "right" : "0rem",
+                        "top" : "0rem"
+                      }
+                    },
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "xx-small",
+                    "text" : "My List",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-large\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "e9c170d5-f639-40a2-b826-0e90434c6198",
+                  "type" : "component"
+                } ],
+                "id" : "f430b5bf-7022-46d1-bc0b-d7a5cc166add",
+                "name" : "itemsHeaderLabel",
+                "title" : "itemsHeaderLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "xx-small",
+                    "paddingVertical" : "none",
+                    "text" : "{!Wishlists.Details.summary.wishlistProductCount} items",
+                    "textAlign" : "left",
+                    "textColor" : "#444444",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"heading-medium\",\"enableOverride\":true}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "b6e429b4-a829-4d75-9323-0f5d9f3e4646",
+                  "type" : "component"
+                } ],
+                "id" : "fd1b5059-68d0-4ba7-9bd2-273989e7c58a",
+                "name" : "itemsHeaderCount",
+                "title" : "itemsHeaderCount",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "autoScrollToMostRecent" : false,
+                    "backgroundColor" : "",
+                    "borderColor" : "",
+                    "borderRadius" : 0,
+                    "borderWidth" : 0,
+                    "horizontalAlignment" : "center",
+                    "isFixedRowHeight" : true,
+                    "itemSpacing" : "xx-small",
+                    "numberOfColumns" : 4,
+                    "showEmptyState" : false,
+                    "showErrorState" : false,
+                    "showPagination" : false,
+                    "width" : 100
+                  },
+                  "children" : [ {
+                    "id" : "b20d8b1b-44f2-46aa-9174-c9522265e257",
+                    "name" : "emptyState",
+                    "title" : "emptyState",
+                    "type" : "region"
+                  }, {
+                    "id" : "462e81ae-db44-42ce-9e74-5accb98eeaa0",
+                    "name" : "errorState",
+                    "title" : "errorState",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "addToCartButtonLabel" : "Add To Cart",
+                        "cardBorderColor" : "rgba(0, 0, 0, 0)",
+                        "cardBorderRadius" : 5,
+                        "cardBorderWeight" : 1,
+                        "cardContentMapping" : "[{\"name\":\"Name\",\"showLabel\":false,\"label\":\"Product Name\",\"fontSize\":\"medium\"}]",
+                        "cardImageBorderColor" : "#d9dfe7",
+                        "cardImageSize" : "contain",
+                        "cardTextFlexAlign" : "flex-start",
+                        "combinePromosThreshold" : "1",
+                        "imageAspectRatio" : "1",
+                        "imageHoverAction" : "none",
+                        "incrementValueGuideText" : "Increment quantity is {0}",
+                        "item" : "{!Item}",
+                        "maximumValueGuideText" : "Maximum quantity is {0}",
+                        "minimumValueGuideText" : "Minimum quantity is {0}",
+                        "priceType" : "displayAllPrices",
+                        "primaryPriceFontSize" : "medium",
+                        "primaryPriceTextStyle" : "{\"bold\":true}",
+                        "promotionTextColor" : "#0d825d",
+                        "searchResultsFields" : "{!Search.Name}",
+                        "secondaryPriceFontSize" : "small",
+                        "secondaryPriceTextColor" : "#707275",
+                        "showButtonOnDesktop" : true,
+                        "showButtonOnMobile" : true,
+                        "showProductImage" : true,
+                        "showQuantityRulesText" : false,
+                        "showQuantitySelector" : false,
+                        "showSku" : false,
+                        "showWishlistIcon" : true,
+                        "skuLabel" : "SKU:",
+                        "subscriptionOptionsLabel" : "Subscription Options Available",
+                        "swatchBorderRadius" : 5,
+                        "unavailablePriceLabel" : "Price Unavailable",
+                        "viewProductOptionsButtonLabel" : "View Options"
+                      },
+                      "definition" : "commerce_builder:productCard",
+                      "id" : "526bc853-d598-4df9-a175-99844a5f869c",
+                      "type" : "component"
+                    } ],
+                    "id" : "0f423412-8c64-4f35-b4e7-ca5886d76744",
+                    "name" : "sfdcRepeaterItem",
+                    "title" : "sfdcRepeaterItem",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "paginatorAttributes" : "{\"nested\":{\"componentName\":\"dxp_content_layout:paginatorShowMore\",\"attributes\":{\"label\":\"Show More\",\"textDecoration\":\"{}\",\"buttonStyle\":\"secondary\",\"size\":\"standard\",\"width\":\"standard\",\"verticalPadding\":\"none\",\"horizontalAlignment\":\"center\"}}}",
+                        "variant" : "showmore"
+                      },
+                      "children" : [ {
+                        "children" : [ {
+                          "attributes" : { },
+                          "definition" : "dxp_page_layout:placeHolder",
+                          "id" : "b9bfd884-415a-4b29-8834-d1f51c580d77",
+                          "type" : "component"
+                        } ],
+                        "id" : "7a95acc6-f943-4754-bc67-5931f664ad88",
+                        "name" : "placeholder",
+                        "title" : "placeholder",
+                        "type" : "region"
+                      } ],
+                      "definition" : "dxp_content_layout:paginator2",
+                      "id" : "88950881-2ac0-4607-af39-2088485a3861",
+                      "type" : "component"
+                    } ],
+                    "id" : "8f0b06d8-d13b-43a2-96a6-4aa78711917a",
+                    "name" : "pagination",
+                    "title" : "pagination",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_content_layout:grid",
+                  "id" : "e59a7386-0f7b-4806-8628-f8498ef24b98",
+                  "type" : "component",
+                  "dataProviders" : [ {
+                    "definition" : "sfdc_cms__expressionDataProvider",
+                    "sfdcExpressionKey" : "Item",
+                    "attributes" : {
+                      "listSource" : "{!Wishlists.Details.page.items}"
+                    }
+                  } ]
+                } ],
+                "id" : "c9454f60-7fad-4ea9-9329-64dc20492956",
+                "name" : "itemsBody",
+                "title" : "itemsBody",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:wishlist",
+              "id" : "7b934ed5-f8b9-46b7-8ce2-4d18ce2eb511",
+              "type" : "component"
+            } ],
+            "id" : "35869e6a-3106-40ce-bf17-1ea4bad8e131",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "db11853b-43ef-4da2-ad1f-f2d0e55efaf8",
+          "type" : "component"
+        } ],
+        "id" : "bcb86304-c795-4588-a6d5-a85e4856c2a7",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "ee119f2b-7999-41e9-b125-02db690893f8",
+          "type" : "component"
+        } ],
+        "id" : "10c799a7-40cf-427e-befe-788396ca845d",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "057ef175-3585-443e-88a7-8b4e446953cd",
+      "type" : "component"
+    },
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceWishlistsDataProvider",
+      "sfdcExpressionKey" : "Wishlists",
+      "attributes" : { }
+    } ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "wishlist"
+  },
+  "urlName" : "wishlist"
+}

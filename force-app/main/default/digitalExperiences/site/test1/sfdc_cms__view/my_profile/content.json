@@ -1,0 +1,262 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "My Profile",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"3dd56440-fd70-40ac-8a2a-a511aaa2602a\",\"columns\":[{\"UUID\":\"4de35c14-d555-4fd0-aa61-4163e0f71e91\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "clientState" : "{!MyProfile.ClientState}",
+                "emailLabel" : "Email Address",
+                "firstNameLabel" : "First Name",
+                "lastNameLabel" : "Last Name",
+                "phoneLabel" : "Phone Number",
+                "profile" : "{!MyProfile.Details}",
+                "profileCardBorderColor" : "#D9DFE7",
+                "profileCardBorderRadius" : 4,
+                "showPhoneDetails" : true
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "xx-small",
+                    "text" : "My Profile",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-large\", \"headingTag\": \"h2\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "be998e17-1840-41e3-a36e-d44f67c3518d",
+                  "type" : "component"
+                } ],
+                "id" : "adad741b-0994-4efe-b012-47f9b55a4ff9",
+                "name" : "header",
+                "title" : "header",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Name",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h3\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "821465b0-bb2e-47b3-b420-655aed14851e",
+                  "type" : "component"
+                } ],
+                "id" : "8124f5dd-292f-4540-a6cc-11e93a5b7834",
+                "name" : "personalDetailsHeaderLabel",
+                "title" : "personalDetailsHeaderLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "size" : "standard",
+                    "text" : "Change Password",
+                    "variant" : "secondary",
+                    "width" : "standard"
+                  },
+                  "definition" : "commerce_builder:actionButton",
+                  "id" : "9d9b78df-5df1-4f55-8691-4233bc8738dc",
+                  "type" : "component"
+                } ],
+                "id" : "8cec77ce-9ee3-44f5-95a7-ce72fda6728b",
+                "name" : "changePasswordButton",
+                "title" : "changePasswordButton",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Email Address",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h3\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "d036981d-8478-4cba-b9a0-6226f6ac2f57",
+                  "type" : "component"
+                } ],
+                "id" : "5ccdf3b5-3e5b-422d-a950-74d2be89b7a2",
+                "name" : "emailHeaderLabel",
+                "title" : "emailHeaderLabel",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Phone Number",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h3\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "fc130136-431f-4bdd-ab6f-da6250dd9ea9",
+                  "type" : "component"
+                } ],
+                "id" : "fd78a147-5dce-4e89-bf01-951f9551e7fe",
+                "name" : "phoneHeaderLabel",
+                "title" : "phoneHeaderLabel",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:myAccountProfileContainer",
+              "id" : "3ff5b958-8fe8-4c29-86b6-86d7d46879d6",
+              "type" : "component"
+            } ],
+            "id" : "4de35c14-d555-4fd0-aa61-4163e0f71e91",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "3dd56440-fd70-40ac-8a2a-a511aaa2602a",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "1rem",
+                "left" : "1rem",
+                "right" : "1rem",
+                "top" : "1rem"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"b092b3a0-e108-4dd0-8e07-299a17733ab3\",\"columns\":[{\"UUID\":\"663d30d7-3121-434a-ae3b-c1d35db282d3\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "consentData" : "{!Marketing.Subscriptions}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "xx-small",
+                    "text" : "Marketing Communication Preferences",
+                    "textAlign" : "left",
+                    "textDecoration" : "{}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-large\", \"headingTag\": \"h2\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "ca1955da-7bf3-4e5e-96aa-51a4e6c47677",
+                  "type" : "component"
+                } ],
+                "id" : "e123b069-433f-4e0c-b5cd-d06ecb5d7202",
+                "name" : "consentOptionsHeaderText",
+                "title" : "consentOptionsHeaderText",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "imageInfos" : "",
+                    "richTextValue" : "<p>Read the <a href=\"{!Site.basePath}/privacy-policy\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Privacy Policy</u></a> to learn how we handle your data.</p>"
+                  },
+                  "definition" : "community_builder:richTextEditor",
+                  "id" : "2798c34d-19ba-42a4-bdd1-af9499728ba8",
+                  "type" : "component"
+                } ],
+                "id" : "143dbf5c-8c20-4681-b9be-dfe808d38086",
+                "name" : "consentOptionsFooterText",
+                "title" : "consentOptionsFooterText",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:myAccountMarketingConsentSettings",
+              "id" : "f72c5364-ebad-4d8a-8bcb-1d212178eb16",
+              "type" : "component",
+              "dataProviders" : [ {
+                "definition" : "sfdc_cms__commerceMarketingConsentDataProvider",
+                "sfdcExpressionKey" : "Marketing",
+                "attributes" : {
+                  "consentExperience" : "ProfileAndRegistration",
+                  "contactFromUserContext" : true
+                }
+              } ]
+            } ],
+            "id" : "663d30d7-3121-434a-ae3b-c1d35db282d3",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "b092b3a0-e108-4dd0-8e07-299a17733ab3",
+          "type" : "component"
+        } ],
+        "id" : "81e6b318-b7e1-4f72-9020-24fc68501d62",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "660ac83e-15ba-48e9-a0e7-b19d44c7233e",
+          "type" : "component"
+        } ],
+        "id" : "a2c17778-4dc3-47b6-8422-578d616fbcd3",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "43f08b08-449d-4ea6-9dce-dc49e7f3df37",
+      "type" : "component"
+    },
+    "dataProviders" : [ {
+      "definition" : "sfdc_cms__commerceMyProfileDataProvider",
+      "sfdcExpressionKey" : "MyProfile",
+      "attributes" : { }
+    } ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "my-profile"
+  },
+  "urlName" : "my-profile"
+}

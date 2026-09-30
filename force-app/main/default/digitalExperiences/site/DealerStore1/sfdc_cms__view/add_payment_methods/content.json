@@ -1,0 +1,66 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Add Payment Methods",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"d96b1bd6-9f8c-42cf-a478-ef0a45fee151\",\"columns\":[{\"UUID\":\"8cf8234e-ba7e-409f-8b7c-9a33949d8656\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "paymentMethodSetId" : ""
+              },
+              "definition" : "commerce_builder:paymentAddPaymentMethods",
+              "id" : "5068af7e-a233-4ca9-bdd0-be2d98271b77",
+              "type" : "component"
+            } ],
+            "id" : "8cf8234e-ba7e-409f-8b7c-9a33949d8656",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "d96b1bd6-9f8c-42cf-a478-ef0a45fee151",
+          "type" : "component"
+        } ],
+        "id" : "ab843a84-e651-4f99-81e5-d0bd8c8e09c9",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "5a768ba8-6f57-4565-8de0-b292437d76bc",
+          "type" : "component"
+        } ],
+        "id" : "de3ced76-c119-446d-8636-836d68575afe",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "ed40d703-18e6-41cb-9e30-079721a2f7f5",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "add-payment-methods"
+  },
+  "urlName" : "add-payment-methods"
+}

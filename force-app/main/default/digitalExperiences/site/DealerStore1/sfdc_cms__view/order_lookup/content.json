@@ -1,0 +1,116 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Order Lookup",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"8db4f232-6902-40e7-bf6c-18d3b4a3ab07\",\"columns\":[{\"UUID\":\"0a607a8d-a229-4624-8b65-759d2be97dcf\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "none",
+                "text" : "Order Details",
+                "textAlign" : "center",
+                "textDecoration" : "{\"bold\": false}",
+                "textDisplayInfo" : "{\"textStyle\": \"heading-large\", \"headingTag\": \"h2\"}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "4b303656-5cba-4254-a2da-d8c223f92348",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<p class=\"slds-text-align_center\">To look up your order, enter the order details or <a href=\"{!Site.basePath}/login?startURL={!Site.basePath}%2FOrderSummary%2FOrderSummary%2FDefault\">log in</a>.</p>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "008946b5-313d-42a3-94bf-5f1c699fa540",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "emailFieldLabel" : "Email",
+                "hideLastName" : true,
+                "lastNameFieldLabel" : "Last Name",
+                "orderNumberFieldLabel" : "Order Number",
+                "orderNumberFieldTooltip" : "Enter the order number from your confirmation email.",
+                "phoneNumberFieldLabel" : "Phone Number",
+                "validationFailureMessage" : "Something's not right. Check your info and try again.",
+                "width" : 25
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "size" : "standard",
+                    "text" : "View Order Details",
+                    "variant" : "primary",
+                    "width" : "stretch"
+                  },
+                  "definition" : "commerce_builder:actionButton",
+                  "id" : "a5001327-8a47-4d6a-97a4-0294f16bebd4",
+                  "type" : "component"
+                } ],
+                "id" : "d67ab0c5-36a0-49b3-acd7-e8cdfad99a01",
+                "name" : "actions",
+                "title" : "actions",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:orderLookup",
+              "id" : "e46b5f85-2070-4d93-bf47-2e205c79c25a",
+              "type" : "component"
+            } ],
+            "id" : "0a607a8d-a229-4624-8b65-759d2be97dcf",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "8db4f232-6902-40e7-bf6c-18d3b4a3ab07",
+          "type" : "component"
+        } ],
+        "id" : "9a4b5cff-5649-4a17-9576-57fdfd45d4e0",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Order Lookup",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "1c025461-1e2e-456e-89a4-e547a424db3c",
+          "type" : "component"
+        } ],
+        "id" : "087ea0e4-6f2e-49b6-90e7-6a1153fe5165",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "11406403-00c5-4a06-abf1-06f7f042b6fe",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "order-lookup"
+  },
+  "urlName" : "order-lookup"
+}

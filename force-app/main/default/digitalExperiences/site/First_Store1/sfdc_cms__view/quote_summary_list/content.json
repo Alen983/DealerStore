@@ -1,0 +1,319 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Quote Summary List",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "1rem",
+                "left" : "1rem",
+                "right" : "1rem",
+                "top" : "1rem"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"066bc535-075d-4369-816d-60bb059be714\",\"columns\":[{\"UUID\":\"ed239a4f-824e-4956-aa57-428b5350d357\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "isLinkable" : false,
+                "linkAssistiveText" : "",
+                "paddingHorizontal" : "none",
+                "paddingVertical" : "xx-small",
+                "text" : "My Quotes",
+                "textAlign" : "left",
+                "textDecoration" : "{\"bold\": false}",
+                "textDisplayInfo" : "{\"textStyle\": \"heading-large\", \"headingTag\": \"h2\"}"
+              },
+              "definition" : "dxp_base:textBlock",
+              "id" : "8d64d212-06ad-4c76-a2fe-9f3a1b25ec5b",
+              "type" : "component"
+            } ],
+            "id" : "ed239a4f-824e-4956-aa57-428b5350d357",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "066bc535-075d-4369-816d-60bb059be714",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "1rem",
+                "left" : "1rem",
+                "right" : "1rem",
+                "top" : "1rem"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"b69b6bf5-cfd3-4190-9ad2-e9c35cbc391f\",\"columns\":[{\"UUID\":\"e64781ea-a676-4a93-9a81-57ad0d820bc4\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "commerce_builder:quoteListDateFilter",
+                  "id" : "a2aa24f6-af67-480e-a839-7adf72c3d342",
+                  "type" : "component"
+                } ],
+                "id" : "deb0cbc7-5dab-4862-bcf1-8759a7faee40",
+                "name" : "dateFilter",
+                "title" : "dateFilter",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "No quotes yet",
+                    "textAlign" : "center",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "ed3937c7-b32a-482e-863f-6b872180f0d8",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "After you create a quote request, you'll find it here.",
+                    "textAlign" : "center",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h3\", \"textStyle\": \"heading-medium\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "8a660229-d2f4-4426-a11e-b36b10c5773c",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Try changing your filter settings.",
+                    "textAlign" : "center",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h4\", \"textStyle\": \"heading-small\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "a1e0edb4-d7ba-4e5d-a60c-c168fef0d63d",
+                  "type" : "component"
+                }, {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Continue Shopping",
+                    "type" : "primary",
+                    "url" : "/"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "72bdb555-2aa0-47e0-a9c2-3ed6b2409162",
+                  "type" : "component"
+                } ],
+                "id" : "6e082394-84ea-46e0-b85d-2244497c6685",
+                "name" : "emptyBody",
+                "title" : "emptyBody",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "autoScrollToMostRecent" : true,
+                    "backgroundColor" : "",
+                    "borderColor" : "",
+                    "borderRadius" : 0,
+                    "borderWidth" : 0,
+                    "isOrderReversed" : false,
+                    "itemSpacing" : "small",
+                    "listType" : "unformatted",
+                    "orderedMarkerAlignment" : "middle",
+                    "orderedMarkerColor" : "",
+                    "orderedMarkerSize" : "body-regular",
+                    "orderedMarkerStartValue" : 1,
+                    "orderedMarkerStyle" : "numbers",
+                    "showPagination" : true,
+                    "unorderedMarkerAlignment" : "middle",
+                    "unorderedMarkerColor" : "",
+                    "unorderedMarkerSize" : "body-regular",
+                    "unorderedMarkerStyle" : "filled-dots",
+                    "width" : 100
+                  },
+                  "children" : [ {
+                    "children" : [ {
+                      "attributes" : {
+                        "borderColor" : "#ecebea",
+                        "headerBgColor" : "#F7F9FA",
+                        "imageAspectRatio" : "1",
+                        "imageSize" : "contain",
+                        "quote" : "{!QuoteSummary}",
+                        "quoteSummaryFieldMapping" : "[]",
+                        "viewDetailsLinkLabel" : "View Quote Request Details"
+                      },
+                      "children" : [ {
+                        "children" : [ {
+                          "attributes" : {
+                            "backgroundColor" : "",
+                            "isLinkable" : false,
+                            "linkAssistiveText" : "",
+                            "paddingHorizontal" : "none",
+                            "paddingVertical" : "none",
+                            "text" : "Quote Request Number: ",
+                            "textAlign" : "left",
+                            "textDecoration" : "{\"bold\": true}",
+                            "textDisplayInfo" : "{\"textStyle\": \"heading-small\", \"headingTag\": \"p\", \"enableOverride\":true}"
+                          },
+                          "definition" : "dxp_base:textBlock",
+                          "id" : "cd61b21a-afbf-46b3-8f93-ebf3a4df5598",
+                          "type" : "component"
+                        } ],
+                        "id" : "769ce951-dd57-4e8e-b2cf-76f385a2c4a7",
+                        "name" : "quoteNumberLabel",
+                        "title" : "quoteNumberLabel",
+                        "type" : "region"
+                      }, {
+                        "children" : [ {
+                          "attributes" : {
+                            "backgroundColor" : "",
+                            "isLinkable" : false,
+                            "linkAssistiveText" : "",
+                            "paddingHorizontal" : "none",
+                            "paddingVertical" : "none",
+                            "text" : "{!QuoteSummary.quoteNumber}",
+                            "textAlign" : "left",
+                            "textDecoration" : "{}",
+                            "textDisplayInfo" : "{\"textStyle\": \"heading-small\", \"headingTag\": \"p\", \"enableOverride\":true}"
+                          },
+                          "definition" : "dxp_base:textBlock",
+                          "id" : "6cba2db9-2ffa-4627-a937-0ea17bfb7193",
+                          "type" : "component"
+                        } ],
+                        "id" : "42d59155-7966-41a1-baa9-ce468f008089",
+                        "name" : "quoteNumber",
+                        "title" : "quoteNumber",
+                        "type" : "region"
+                      } ],
+                      "definition" : "commerce_builder:quoteSummary",
+                      "id" : "5e248f1a-2654-47b6-b632-25d5d1439302",
+                      "type" : "component"
+                    } ],
+                    "id" : "67952933-269e-4f95-b655-74b3a9145d87",
+                    "name" : "sfdcRepeaterItem",
+                    "title" : "sfdcRepeaterItem",
+                    "type" : "region"
+                  }, {
+                    "children" : [ {
+                      "attributes" : {
+                        "paginatorAttributes" : "{\"nested\":{\"componentName\":\"dxp_content_layout:paginatorShowMore\",\"attributes\":{\"label\":\"Show More\",\"textDecoration\":\"{}\",\"buttonStyle\":\"secondary\",\"size\":\"standard\",\"width\":\"standard\",\"verticalPadding\":\"none\",\"horizontalAlignment\":\"center\"}}}",
+                        "variant" : "showmore"
+                      },
+                      "children" : [ {
+                        "children" : [ {
+                          "attributes" : { },
+                          "definition" : "dxp_page_layout:placeHolder",
+                          "id" : "dd6f4956-575f-462c-b1ea-ae873e4881eb",
+                          "type" : "component"
+                        } ],
+                        "id" : "ab953887-e814-4c28-b995-003767efb4a9",
+                        "name" : "placeholder",
+                        "title" : "placeholder",
+                        "type" : "region"
+                      } ],
+                      "definition" : "dxp_content_layout:paginator2",
+                      "id" : "953d84f9-e92c-4671-9db6-b18c46dc7365",
+                      "type" : "component"
+                    } ],
+                    "id" : "46f760ab-6739-4509-b98a-74261ad9d26c",
+                    "name" : "pagination",
+                    "title" : "pagination",
+                    "type" : "region"
+                  } ],
+                  "definition" : "dxp_content_layout:list",
+                  "id" : "8b9492c4-d883-4d1e-8660-28392f0fd15f",
+                  "type" : "component",
+                  "dataProviders" : [ {
+                    "definition" : "sfdc_cms__commerceQuoteSummaryListDataProvider",
+                    "sfdcExpressionKey" : "QuoteSummary",
+                    "attributes" : { }
+                  } ]
+                } ],
+                "id" : "785bb04c-d6df-49f3-bc3c-55abb9e172f9",
+                "name" : "quoteListRepeater",
+                "title" : "quoteListRepeater",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:quoteList",
+              "id" : "dd1018a8-95d8-4ea3-bdb4-c250d11a7e39",
+              "type" : "component"
+            } ],
+            "id" : "e64781ea-a676-4a93-9a81-57ad0d820bc4",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "b69b6bf5-cfd3-4190-9ad2-e9c35cbc391f",
+          "type" : "component"
+        } ],
+        "id" : "aab9fddb-6b4c-4a59-8c2e-6067a044255f",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "8eede8fe-8b4f-4394-8769-d92205a8da95",
+          "type" : "component"
+        } ],
+        "id" : "a8eca4c6-9d9a-4993-a2f7-15325c8b7b8c",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "b3fbf701-2459-4557-9811-1b88c6292c5a",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "MyAccount",
+    "viewType" : "quote-summary-list"
+  },
+  "urlName" : "quote-summary-list"
+}

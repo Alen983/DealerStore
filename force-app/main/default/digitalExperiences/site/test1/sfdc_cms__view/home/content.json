@@ -1,0 +1,415 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "dxpStyle" : {
+              "padding" : {
+                "bottom" : "0%",
+                "left" : "0%",
+                "right" : "0%",
+                "top" : "0%"
+              }
+            },
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "none",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"4a398222-afd9-4ec2-9891-994a57804922\",\"columns\":[{\"UUID\":\"e3b98b58-bf6e-4896-b425-bda5a9afebce\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "bannerAlignment" : "center",
+                "bannerId" : "",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "left",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "space-evenly",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 100,
+                "contentPadding" : "none",
+                "contentPosition" : "center left",
+                "contentWidth" : 33,
+                "height" : 600,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"assets/images/home-banner-2.jpg\",\"altText\":\"Main Pods Banner\",\"contentKey\":\"\"}}",
+                "imagePosition" : "center center",
+                "isBannerLink" : false,
+                "overlayColor" : "rgba(0, 0, 0, 0.2)",
+                "showButtons" : true,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "left",
+                "width" : 100
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Unleash Your Inner Power: Fuel Your Day with Alpine Energy!",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": false}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-xlarge\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "d8f2f56a-2945-422e-ba42-2ebf75254d1d",
+                  "type" : "component"
+                } ],
+                "id" : "8750b9b1-7d83-4d26-a698-923c818ad843",
+                "name" : "contentRegion",
+                "title" : "Content Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "size" : "large",
+                    "stretch" : "standard",
+                    "text" : "Shop Energy Drinks",
+                    "type" : "secondary",
+                    "url" : "javascript:void(0)"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "94710953-1c4a-4f44-848d-f06822c6f888",
+                  "type" : "component"
+                } ],
+                "id" : "64c68f24-0e27-486a-b9ac-5f77c75c768a",
+                "name" : "bannerPrimaryButton",
+                "title" : "Primary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "0a00f171-668f-462d-9608-8e97d8c57cf1",
+                  "type" : "component"
+                } ],
+                "id" : "cbfda07f-44eb-4e09-801c-3fc5ca40fe77",
+                "name" : "bannerSecondaryButton",
+                "title" : "Secondary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "9e9e40d7-3592-476d-ae5d-88f22b681223",
+                  "type" : "component"
+                } ],
+                "id" : "f58b7f82-e04f-4313-b0e4-6c1c429f2e44",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_content_layout:banner",
+              "id" : "816fa27c-272b-4b9e-9e54-368bb311d3e6",
+              "type" : "component"
+            } ],
+            "id" : "e3b98b58-bf6e-4896-b425-bda5a9afebce",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "4a398222-afd9-4ec2-9891-994a57804922",
+          "scopedBrandingSetId" : "B2B_Home_Banner",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"37de64fb-c952-4e28-a87e-2a790b5ab17d\",\"columns\":[{\"UUID\":\"bfc11cdd-4fb5-43ff-b86c-11613888e7e8\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "browseStep" : 3,
+                "headerText" : "Recommended For You",
+                "pageSize" : 6
+              },
+              "definition" : "b2c_lite_commerce:topSellers",
+              "id" : "83b2d539-8d4f-4965-97ff-c543997f96fa",
+              "type" : "component"
+            } ],
+            "id" : "bfc11cdd-4fb5-43ff-b86c-11613888e7e8",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "37de64fb-c952-4e28-a87e-2a790b5ab17d",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"0d8c414f-ce7b-4109-a59e-99f5b3fe6fad\",\"columns\":[{\"UUID\":\"6f325253-6a44-41d2-abbb-6b440be668ce\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"6\",\"seedComponents\":null},{\"UUID\":\"8834c082-6685-4b08-b2dc-9f3aae67837a\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"6\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "addEntryButtonText" : "+ Add Product",
+                "addToCartButtonProcessingText" : "Adding...",
+                "addToCartButtonText" : "Add To Cart",
+                "incrementValueGuideText" : "Sold in increments of {0}",
+                "maximumValueGuideText" : "Maximum quantity is {0}",
+                "minimumValueGuideText" : "Minimum quantity is {0}",
+                "numberOfLineItemsToAddEachTime" : "3",
+                "numberOfLineItemsToStart" : "5",
+                "searchInputPlaceHolderText" : "Enter Sku",
+                "skuLabelText" : "SKU# {0}"
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Quick Order",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"h2\", \"textStyle\": \"heading-large\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "456d4234-2fb3-46a2-921e-9e9ec121069a",
+                  "type" : "component"
+                } ],
+                "id" : "37ca8785-5a55-4aba-b03d-7c56022e2432",
+                "name" : "header",
+                "title" : "header",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Product",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "892b926e-742c-4cd3-a383-38d8714aab62",
+                  "type" : "component"
+                } ],
+                "id" : "cb30920d-cc0c-40e3-ad8b-e909b697db98",
+                "name" : "productHeader",
+                "title" : "productHeader",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Quantity",
+                    "textAlign" : "left",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "eb4bbf19-3b5d-4ead-b090-24840417f8ed",
+                  "type" : "component"
+                } ],
+                "id" : "647e22c3-fc53-4736-ad2c-3dc2ba1aedb7",
+                "name" : "quantityHeader",
+                "title" : "quantityHeader",
+                "type" : "region"
+              } ],
+              "definition" : "commerce_builder:quickOrder",
+              "id" : "5d32535a-6777-4569-b410-c91a3c042113",
+              "type" : "component"
+            } ],
+            "id" : "6f325253-6a44-41d2-abbb-6b440be668ce",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : {
+                "backgroundColor" : "",
+                "bannerAlignment" : "center",
+                "bannerId" : "",
+                "bannerLinkAssistiveText" : "",
+                "borderColor" : "",
+                "borderRadius" : 0,
+                "borderWidth" : 0,
+                "buttonDirection" : "horizontal",
+                "buttonGroupAlignment" : "left",
+                "buttonGroupHeight" : 50,
+                "buttonGroupSpacingHorizontal" : "space-evenly",
+                "buttonGroupSpacingVertical" : "space-evenly",
+                "buttonGroupWidth" : 50,
+                "contentPadding" : "none",
+                "contentPosition" : "center right",
+                "contentWidth" : 50,
+                "height" : 450,
+                "imageFit" : "cover",
+                "imageInfo" : "{\"imageInfoV1\":{\"url\":\"assets/images/homeBanner-right.png\",\"altText\":\"Quick Order Pods Banner\",\"contentKey\":\"\"}}",
+                "imagePosition" : "center center",
+                "isBannerLink" : false,
+                "overlayColor" : "",
+                "showButtons" : true,
+                "showSecondaryButton" : false,
+                "singleButtonAlignment" : "left",
+                "width" : 100
+              },
+              "children" : [ {
+                "children" : [ {
+                  "attributes" : {
+                    "backgroundColor" : "",
+                    "isLinkable" : false,
+                    "linkAssistiveText" : "",
+                    "paddingHorizontal" : "none",
+                    "paddingVertical" : "none",
+                    "text" : "Unleash Your Potential with Alpine Snack Bars",
+                    "textAlign" : "left",
+                    "textColor" : "rgb(0, 0, 0)",
+                    "textDecoration" : "{\"bold\": true}",
+                    "textDisplayInfo" : "{\"textStyle\": \"heading-xlarge\"}"
+                  },
+                  "definition" : "dxp_base:textBlock",
+                  "id" : "7d8cf2bf-60ba-4eea-88ca-4a6bd6e78e75",
+                  "type" : "component"
+                } ],
+                "id" : "17f19cbc-3afe-4c09-9d8b-7a4c00972776",
+                "name" : "contentRegion",
+                "title" : "Content Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "left",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Shop Snack Bars",
+                    "type" : "primary",
+                    "url" : "javascript:void(0)"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "2363c34f-b42d-4578-af1f-87e4be3be0a4",
+                  "type" : "component"
+                } ],
+                "id" : "d8c06f92-edf4-4667-8cd7-1c616a3e3672",
+                "name" : "bannerPrimaryButton",
+                "title" : "Primary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : {
+                    "alignment" : "center",
+                    "size" : "standard",
+                    "stretch" : "standard",
+                    "text" : "Contact Us",
+                    "type" : "secondary"
+                  },
+                  "definition" : "dxp_base:button",
+                  "id" : "72b04db8-665a-45f4-8a86-057954984ba9",
+                  "type" : "component"
+                } ],
+                "id" : "f93575f0-5220-402e-84a9-ac88d7e22587",
+                "name" : "bannerSecondaryButton",
+                "title" : "Secondary Button Region",
+                "type" : "region"
+              }, {
+                "children" : [ {
+                  "attributes" : { },
+                  "definition" : "dxp_page_layout:placeHolder",
+                  "id" : "6cc28481-7b0d-4e73-9e13-37fea718163d",
+                  "type" : "component"
+                } ],
+                "id" : "65660456-05f4-4f1a-bcbd-49a7ced70e01",
+                "name" : "placeholder",
+                "title" : "placeholder",
+                "type" : "region"
+              } ],
+              "definition" : "dxp_content_layout:banner",
+              "id" : "99be1560-4abb-41d7-972a-0c63ee7df7d3",
+              "type" : "component"
+            } ],
+            "id" : "8834c082-6685-4b08-b2dc-9f3aae67837a",
+            "name" : "col2",
+            "title" : "Column 2",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "0d8c414f-ce7b-4109-a59e-99f5b3fe6fad",
+          "type" : "component"
+        } ],
+        "id" : "42c1b43c-b0b2-48b3-8b76-b76e1ed9579e",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "acec1348-ac1c-4961-9a5f-858dfe20d146",
+          "type" : "component"
+        } ],
+        "id" : "e0771c53-615e-4cc5-b94f-5ab1ce68382e",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "27a7d29b-015d-4eb1-9de6-72da9db57009",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

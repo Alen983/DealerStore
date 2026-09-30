@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title="Product Launch Status">
+
+        <div class="status-container">
+
+            <!-- GOLD EXCLUSIVE -->
+            <template lwc:if={isExclusive}>
+
+                <div class="exclusive-status">
+
+                    <h2 class="gold-title">
+                        ⭐ Gold Dealer Exclusive
+                    </h2>
+
+                    <p class="ends-text">
+                        <strong>Exclusive access ends in</strong>
+                    </p>
+
+                    <div class="countdown">
+                        {countdown}
+                    </div>
+
+                </div>
+
+            </template>
+
+            <!-- AVAILABLE TO ALL -->
+            <template lwc:else>
+
+                <div class="available-status">
+                    <h1>Available to All</h1>
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,34 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "attributes" : {
+          "contentWidth" : "60"
+        },
+        "id" : "816fa27c-272b-4b9e-9e54-368bb311d3e6"
+      }, {
+        "attributes" : {
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "d8f2f56a-2945-422e-ba42-2ebf75254d1d"
+      }, {
+        "attributes" : {
+          "dxpStyle" : {
+            "margin" : {
+              "bottom" : "0rem",
+              "left" : "0rem",
+              "right" : "1.5rem",
+              "top" : "0rem"
+            }
+          },
+          "textAlign" : "right",
+          "textDisplayInfo" : "{\"textStyle\": \"heading-large\"}"
+        },
+        "id" : "7d8cf2bf-60ba-4eea-88ca-4a6bd6e78e75"
+      } ]
+    }
+  },
+  "urlName" : "home"
+}
