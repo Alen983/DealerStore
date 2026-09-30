@@ -1,0 +1,59 @@
+.subscription-badge {
+    background-color: #f4f6f9;
+    border: 1px solid #d8dde6;
+    border-left: 4px solid #0176d3;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.badge-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.badge-icon {
+    --sds-c-icon-color-foreground-default: #0176d3;
+}
+
+.badge-title {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #16325c;
+}
+
+.badge-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.badge-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.35rem 0;
+    font-size: 0.8125rem;
+    border-top: 1px solid #e5e9f0;
+}
+
+.badge-item:first-child {
+    border-top: none;
+}
+.badge-note {
+    font-size: 0.7rem; /* 12px equivalent */
+    color: #706e6b;    /* Salesforce SLDS muted gray */
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.item-name {
+    color: #16325c;
+    font-weight: 500;
+}
+
+.item-detail {
+    color: #706e6b;
+}

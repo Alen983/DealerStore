@@ -1,0 +1,19 @@
+<template>
+    <template if:true={subscriptionItems.length}>
+        <div class="subscription-badge">
+            <div class="badge-header">
+                <lightning-icon icon-name="utility:recurring_task" size="x-small" class="badge-icon"></lightning-icon>
+                <span class="badge-title">Subscription items in this cart</span>
+            </div>
+            <ul class="badge-list">
+                <template for:each={subscriptionItems} for:item="item">
+                    <li key={item.id} class="badge-item">
+                        <span class="item-name">{item.productName}</span>
+                        <span class="item-detail"> · {item.sellingModelName} · </span>
+                    </li>
+                </template>
+            </ul>
+            <p class="badge-note">Your subscriber discount will be automatically applied starting on your 2nd order.</p>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Purchase Options">
+        <template if:true={options.length}>
+            <lightning-radio-group
+                name="purchaseOption"
+                label="Choose a Purchase Option"
+                options={options}
+                value={selectedOption}
+                onchange={handleSelection}>
+            </lightning-radio-group>
+
+            <lightning-button
+                variant="brand"
+                label="Add to Cart"
+                onclick={handleAddToCart}
+                disabled={isAddToCartDisabled}
+                class="slds-m-top_small">
+            </lightning-button>
+        </template>
+
+        <template if:true={successMessage}>
+            <div class="slds-text-color_success slds-p-around_small">
+                {successMessage}
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <div class="slds-text-color_error slds-p-around_small">
+                {error}
+            </div>
+        </template>
+    </lightning-card>
+</template>

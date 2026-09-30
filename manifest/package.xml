@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>CartSubscriptionBadgeController</members>
+		<members>CommerceSubscriptionController</members>
+		<members>SubscriptionRequestLinkAction</members>
+		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>Subscription_Request__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Order_Subscriber_Flow</members>
+		<members>RecurringOrderCreationAction</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>cartSubscriptionBadge</members>
+		<members>subscriptionPanel</members>
+		<name>LightningComponentBundle</name>
+	</types>
+	<version>67.0</version>
+</Package>
