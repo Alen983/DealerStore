@@ -1,0 +1,34 @@
+<template>
+
+    <div class="credit-check-container">
+
+        <p>
+            <strong>Credit Checkout Validator</strong>
+        </p>
+
+        <p>
+            Cart Total:
+            <strong>{formattedCartTotal}</strong>
+        </p>
+
+        <p>
+            Available Credit:
+            <strong>{formattedAvailableCredit}</strong>
+        </p>
+
+
+        <template if:true={showError}>
+
+            <div
+                class="credit-error"
+                role="alert">
+
+                ⚠️ {errorMessage}
+
+            </div>
+
+        </template>
+
+    </div>
+
+</template>

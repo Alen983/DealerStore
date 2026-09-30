@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<isExposed>true</isExposed>
+	<apiVersion>67.0</apiVersion>
+	<masterLabel>Dealer Credit Summary</masterLabel>
+	<description>Displays the logged-in dealer's PO credit limit, used credit, and available credit</description>
+	<targets>
+		<target>lightningCommunity__Page</target>
+	</targets>
+</LightningComponentBundle>

@@ -1,0 +1,8 @@
+<template>
+    <template if:true={showError}>
+        <div class="slds-notify slds-notify_alert slds-theme_error" role="alert">
+            <span class="slds-assistive-text">Error</span>
+            <h2>{errorMessage}</h2>
+        </div>
+    </template>
+</template>

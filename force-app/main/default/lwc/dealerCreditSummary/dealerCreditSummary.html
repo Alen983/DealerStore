@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="PO Credit Summary" icon-name="standard:account">
+        <div class="credit-container">
+
+            <div class="credit-item">
+                <span class="label">Purchase Order Credit Limit : </span>
+                <span class="value">{formattedCreditLimit}</span>
+            </div>
+
+            <div class="credit-item">
+                <span class="label">Purchase Order Used Credit : </span>
+                <span class="value">{formattedUsedCredit}</span>
+            </div>
+
+            <div class="credit-item">
+                <span class="label">Purchase Order Available Credit : </span>
+                <span class="value">{formattedAvailableCredit}</span>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>
