@@ -1,0 +1,67 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "My Procurement Benefits",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"50c8fa1e-ec3a-4c74-8866-0a5a54f72ba3\",\"columns\":[{\"UUID\":\"4f1e4b1c-c6ee-4200-b96d-1f2b43e3a759\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:procurementBenefits",
+              "id" : "3e0c3276-e91a-4d54-b972-2b34407a6ba1",
+              "type" : "component"
+            } ],
+            "id" : "4f1e4b1c-c6ee-4200-b96d-1f2b43e3a759",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "50c8fa1e-ec3a-4c74-8866-0a5a54f72ba3",
+          "type" : "component"
+        } ],
+        "id" : "3784a638-795c-438d-86d5-6897bd6846da",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "My Procurement Benefits",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "45e621ad-3231-4e9e-ae13-d08266d2551b",
+          "type" : "component"
+        } ],
+        "id" : "bdc6750d-90cd-4f05-ae62-d026baabeff5",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "d62b9d0e-93a3-4416-a85c-e138af45d156",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-my-procurement-benefits"
+  },
+  "urlName" : "my-procurement-benefits"
+}

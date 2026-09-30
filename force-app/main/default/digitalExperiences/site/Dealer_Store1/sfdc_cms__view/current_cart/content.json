@@ -14,7 +14,7 @@
             "layoutDirectionTablet" : "column",
             "maxContentWidth" : "1200px",
             "sectionColumnGutterWidth" : "1.5",
-            "sectionConfig" : "{\"UUID\":\"bf06de6d-37ff-4a02-bcec-7448cd3f2b2e\",\"columns\":[{\"UUID\":\"9abc0b38-21f9-458c-ae18-a095b7a31b06\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"7\",\"seedComponents\":null},{\"UUID\":\"869e1806-5b4d-4407-bf4e-8c5152bc262d\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"1\",\"seedComponents\":null},{\"UUID\":\"a409a30a-c5d7-443a-8929-46ea836c3b9c\",\"columnName\":\"Column 3\",\"columnKey\":\"col3\",\"columnWidth\":\"4\",\"seedComponents\":null}]}",
+            "sectionConfig" : "{\"UUID\":\"92f721ae-f403-4000-96e7-7dfa98401878\",\"columns\":[{\"UUID\":\"1c5f6c35-5c56-439d-b626-5d6b1d2e7ccf\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"7\",\"seedComponents\":null},{\"UUID\":\"aded3ddf-dddc-4444-80ea-37a7dcbf061d\",\"columnName\":\"Column 2\",\"columnKey\":\"col2\",\"columnWidth\":\"1\",\"seedComponents\":null},{\"UUID\":\"af6ac80f-082d-44c9-abc6-672379f83ac2\",\"columnName\":\"Column 3\",\"columnKey\":\"col3\",\"columnWidth\":\"4\",\"seedComponents\":null}]}",
             "sectionMinHeight" : "",
             "sectionVerticalAlign" : "flex-start"
           },
@@ -39,10 +39,10 @@
                     "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
                   },
                   "definition" : "dxp_base:textBlock",
-                  "id" : "be87c3d4-8f23-456e-affe-236364408e8f",
+                  "id" : "3a227f3c-d194-45a6-80c8-28fe85f4c121",
                   "type" : "component"
                 } ],
-                "id" : "516a76c7-dae8-45fc-81d1-784c4d321fa2",
+                "id" : "54b71387-9b83-4755-9317-070293cb852f",
                 "name" : "emptyHeaderLabel",
                 "title" : "emptyHeaderLabel",
                 "type" : "region"
@@ -60,7 +60,7 @@
                     "textDisplayInfo" : "{\"headingTag\": \"h1\", \"textStyle\": \"heading-large\"}"
                   },
                   "definition" : "dxp_base:textBlock",
-                  "id" : "c4a6edf2-dab7-4e96-855d-7201a9de570a",
+                  "id" : "f0526c06-afd4-4b5c-a9f1-00031d8f152a",
                   "type" : "component"
                 }, {
                   "attributes" : {
@@ -72,10 +72,10 @@
                     "url" : "/"
                   },
                   "definition" : "dxp_base:button",
-                  "id" : "4af80bed-580e-47a0-a211-9c469035e91a",
+                  "id" : "981e98fa-8189-4304-8199-c86499c4be8c",
                   "type" : "component"
                 } ],
-                "id" : "d0d32d3d-9b11-401e-ad1c-5b9348ae1516",
+                "id" : "ed26de8d-0583-44a7-b4ae-15dc3888752c",
                 "name" : "emptyBody",
                 "title" : "emptyBody",
                 "type" : "region"
@@ -93,10 +93,10 @@
                     "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"heading-large\"}"
                   },
                   "definition" : "dxp_base:textBlock",
-                  "id" : "fba090a8-c3b8-41f0-aff6-e1eeafafd204",
+                  "id" : "aaef0a0e-15cf-40b5-8336-a5175bb56e32",
                   "type" : "component"
                 } ],
-                "id" : "a9c3b195-fece-4666-9b69-8685e46a9ffb",
+                "id" : "520a7f4f-43d0-4c5e-ad5d-e8d3883fb585",
                 "name" : "itemsHeaderLabel",
                 "title" : "itemsHeaderLabel",
                 "type" : "region"
@@ -114,10 +114,10 @@
                     "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"heading-large\"}"
                   },
                   "definition" : "dxp_base:textBlock",
-                  "id" : "cb1a1d4e-bb56-41f5-855d-0a239b84a0a7",
+                  "id" : "6ddee813-2428-40ce-8e41-850ce20fd1ab",
                   "type" : "component"
                 } ],
-                "id" : "e0e3fe5e-1517-4204-b462-e058524d885d",
+                "id" : "6901dfb2-7d14-4a4e-933d-324323dca909",
                 "name" : "itemsHeaderCount",
                 "title" : "itemsHeaderCount",
                 "type" : "region"
@@ -127,10 +127,10 @@
                     "discountsApproaching" : "{!Cart.DiscountsApproaching}"
                   },
                   "definition" : "commerce_builder:promotionDiscountsApproaching",
-                  "id" : "fc306e60-77b3-437e-83ed-d9ae86ce3ce7",
+                  "id" : "be1b7004-4bbf-4350-aa21-5381c79cb994",
                   "type" : "component"
                 } ],
-                "id" : "b525eac9-9749-4889-893f-75f84d85fd25",
+                "id" : "b6850adb-bbfd-45f1-9dae-f86629941023",
                 "name" : "discountsApproaching",
                 "title" : "discountsApproaching",
                 "type" : "region"
@@ -157,6 +157,7 @@
                     "productDetailsPillBorderColor" : "rgb(217, 223, 231)",
                     "productDetailsPillBorderRadius" : 8,
                     "productDetailsPillFontSize" : "small",
+                    "productFieldMapping" : "[{\"name\":\"ProductCode\",\"label\":\"Product Code\",\"type\":\"STRING\"}]",
                     "promotionsAppliedSavingsButtonText" : "Saved {amount}",
                     "quantityLabel" : "Qty",
                     "removeProductLinks" : false,
@@ -190,19 +191,19 @@
                         "textDisplayInfo" : "{\"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "8356a364-bd35-404e-822a-794fdbfa2e64",
+                      "id" : "d4d7f040-3e08-45b3-82e6-c7f9dbe4d026",
                       "type" : "component"
                     } ],
-                    "id" : "2dfc49ed-a455-4f34-bf63-8668b6c7dce4",
+                    "id" : "8a08b803-21f9-408e-8140-1a9179f722d9",
                     "name" : "showMore",
                     "title" : "showMore",
                     "type" : "region"
                   } ],
                   "definition" : "commerce_builder:cartItems",
-                  "id" : "55546ecc-a065-4076-9e6b-ddf2c12b7f2f",
+                  "id" : "8d01d943-d5b5-49cf-9ec0-2bb67811aef4",
                   "type" : "component"
                 } ],
-                "id" : "fd96f315-3b64-45c7-9bf1-57d3ad11065e",
+                "id" : "17bfc08f-567a-4887-a375-12bf9c396662",
                 "name" : "itemsBody",
                 "title" : "itemsBody",
                 "type" : "region"
@@ -215,10 +216,10 @@
                     "width" : "standard"
                   },
                   "definition" : "commerce_builder:actionButton",
-                  "id" : "44636460-04b6-4850-bb17-0a40cc84d6fb",
+                  "id" : "60cc231a-0737-4b13-86f2-43d6da44c2db",
                   "type" : "component"
                 } ],
-                "id" : "11ef0e43-1436-48a3-8145-f354b1eef8a8",
+                "id" : "5a2b1c41-dbf7-44f8-a5fd-73e10900709d",
                 "name" : "footerClearCart",
                 "title" : "footerClearCart",
                 "type" : "region"
@@ -228,19 +229,19 @@
                     "discountsApproaching" : "{!Cart.DiscountsApproaching}"
                   },
                   "definition" : "commerce_builder:promotionDiscountsApproaching",
-                  "id" : "8d162590-433b-47b2-bff9-efcc93057438",
+                  "id" : "037f7cc4-1e08-4590-b9cf-ada5f15a0253",
                   "type" : "component"
                 } ],
-                "id" : "3f028e47-6cd8-4aec-88dd-1a7855e68cad",
+                "id" : "45dbfea0-d06d-4dca-b988-c0919067570e",
                 "name" : "promotionDiscountsApproaching",
                 "title" : "promotionDiscountsApproaching",
                 "type" : "region"
               } ],
               "definition" : "commerce_builder:b2bCartContents",
-              "id" : "abe42ab3-ef60-42b1-94c3-c43f98d53e85",
+              "id" : "a27fee77-a523-416c-8b4d-15de8583897a",
               "type" : "component"
             } ],
-            "id" : "9abc0b38-21f9-458c-ae18-a095b7a31b06",
+            "id" : "1c5f6c35-5c56-439d-b626-5d6b1d2e7ccf",
             "name" : "col1",
             "title" : "Column 1",
             "type" : "region"
@@ -253,19 +254,19 @@
                 "layoutDirectionDesktop" : "row",
                 "layoutDirectionMobile" : "column",
                 "layoutDirectionTablet" : "column",
-                "sectionConfig" : "{\"UUID\":\"22e3fb07-14bd-4fbd-af0b-efdbc4000a3a\",\"columns\":[{\"UUID\":\"334ba500-0f6f-4b0d-9af4-ededc27d4ae9\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+                "sectionConfig" : "{\"UUID\":\"d81e8be1-87c8-41dc-9de1-05c6b7be2394\",\"columns\":[{\"UUID\":\"e915fc3f-bb5f-49f4-8961-9808276a137d\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
               },
               "children" : [ {
-                "id" : "334ba500-0f6f-4b0d-9af4-ededc27d4ae9",
+                "id" : "e915fc3f-bb5f-49f4-8961-9808276a137d",
                 "name" : "col1",
                 "title" : "Column 1",
                 "type" : "region"
               } ],
               "definition" : "dxp_layout:columns",
-              "id" : "22e3fb07-14bd-4fbd-af0b-efdbc4000a3a",
+              "id" : "d81e8be1-87c8-41dc-9de1-05c6b7be2394",
               "type" : "component"
             } ],
-            "id" : "869e1806-5b4d-4407-bf4e-8c5152bc262d",
+            "id" : "aded3ddf-dddc-4444-80ea-37a7dcbf061d",
             "name" : "col2",
             "title" : "Column 2",
             "type" : "region"
@@ -312,10 +313,10 @@
                         "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "37abeb80-1ded-4d8c-9840-4c475d581bed",
+                      "id" : "5de080ce-7c0a-4323-9e6a-fc7a7218a28c",
                       "type" : "component"
                     } ],
-                    "id" : "112f48aa-7c99-4d0e-8042-874b398ebcc8",
+                    "id" : "0b4410fd-ea36-4d51-be87-b5c7d471bf68",
                     "name" : "headerText",
                     "title" : "Heading",
                     "type" : "region"
@@ -333,10 +334,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "b8426c93-2baf-4f37-80d8-147b6b7e1bed",
+                      "id" : "798bf34f-338e-40f2-bbfe-f1760d7057a8",
                       "type" : "component"
                     } ],
-                    "id" : "74e9f89c-eeb9-4709-950b-afc71223ade1",
+                    "id" : "abba640b-65b7-474a-abe0-e66e7c927206",
                     "name" : "originalPriceLabel",
                     "title" : "originalPriceLabel",
                     "type" : "region"
@@ -354,10 +355,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "e8aad4fb-cfee-4080-b389-9dd755278898",
+                      "id" : "86ff9b38-997a-4fb9-b63a-9ce2be4f4299",
                       "type" : "component"
                     } ],
-                    "id" : "7410cb72-c968-4065-b879-c3c96dfa99e8",
+                    "id" : "a19f2660-f6e4-442c-8220-8a9e33bd145b",
                     "name" : "promotionsLabel",
                     "title" : "Promotions Label",
                     "type" : "region"
@@ -375,10 +376,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "dc3bbfb5-3b5e-4d6b-9075-b056c16442c6",
+                      "id" : "11d8823c-1743-49b0-ab4d-cc7f275fc480",
                       "type" : "component"
                     } ],
-                    "id" : "3ec104c3-cf0c-40df-bc4d-4b9662b7f55a",
+                    "id" : "25f96f8e-caff-4aa6-8b60-0af3711d6ad5",
                     "name" : "shippingLabel",
                     "title" : "Shipping Label",
                     "type" : "region"
@@ -396,10 +397,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "6eed496d-402e-46e4-aafc-c3445abb7ed9",
+                      "id" : "4f97c146-183d-46a4-84c9-0811684760b8",
                       "type" : "component"
                     } ],
-                    "id" : "c46f9819-5513-4636-bbbb-99d796c2c7e3",
+                    "id" : "44fac79f-857c-4640-a312-d85797634bf0",
                     "name" : "subtotalLabel",
                     "title" : "Subtotal Label",
                     "type" : "region"
@@ -417,10 +418,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "05906d94-1fe1-44bd-b794-b5422452a943",
+                      "id" : "0d26d729-c956-40e4-b4f2-d2628aacbc57",
                       "type" : "component"
                     } ],
-                    "id" : "d9c945fc-1c70-4041-9adc-7dcba7cdcb6b",
+                    "id" : "dc5a3c4b-354f-42e1-80ac-2d9f287f60fe",
                     "name" : "taxIncludedLabel",
                     "title" : "Tax Included Label",
                     "type" : "region"
@@ -438,10 +439,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "f5f47166-6e47-42c2-add9-ef8a031abf65",
+                      "id" : "52a95625-4bcb-43a0-94f5-9339052260a4",
                       "type" : "component"
                     } ],
-                    "id" : "28b06e5e-2e52-4b16-9093-735d88d08515",
+                    "id" : "4b6682f7-9248-499d-8954-9ac4975144d8",
                     "name" : "taxLabel",
                     "title" : "Tax Label",
                     "type" : "region"
@@ -459,16 +460,16 @@
                         "textDisplayInfo" : "{ \"headingTag\": \"p\", \"textStyle\": \"heading-small\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "6cc36ff2-ce7c-4a16-bc6c-d46685cbe12b",
+                      "id" : "c0cf13d9-7514-4ca2-ae30-c0385737c505",
                       "type" : "component"
                     } ],
-                    "id" : "bbb2747e-2359-4b46-9686-2ee58dad7e5e",
+                    "id" : "830459a5-3dc3-49e2-bb29-6c96d043cdaf",
                     "name" : "totalLabel",
                     "title" : "Total Label",
                     "type" : "region"
                   } ],
                   "definition" : "commerce_builder:cartSummary",
-                  "id" : "04c2d13c-f9be-4290-831d-c2e67a0807f9",
+                  "id" : "c77df66d-e565-4938-b517-2f8c6251bef4",
                   "type" : "component"
                 }, {
                   "attributes" : {
@@ -503,19 +504,19 @@
                             "url" : ""
                           },
                           "definition" : "dxp_base:button",
-                          "id" : "c56612ab-5f25-4343-8e18-00e95a31597d",
+                          "id" : "4be568f9-4acf-48e6-b370-5faf94c29101",
                           "type" : "component"
                         } ],
-                        "id" : "d1c890cf-e577-4389-b405-3a0e01dfb566",
+                        "id" : "6d8eea1e-ee19-48b2-88db-36f5fb70f126",
                         "name" : "revealButton",
                         "title" : "revealButton",
                         "type" : "region"
                       } ],
                       "definition" : "commerce_builder:cartApplyCoupon",
-                      "id" : "74706be4-6704-4052-8689-a833195e9ccd",
+                      "id" : "0cb7f39f-bc9a-47a4-8d91-0e93ea6c630b",
                       "type" : "component"
                     } ],
-                    "id" : "ce94f576-1f4d-41b9-88f0-a51ee0babb76",
+                    "id" : "7c450b1e-d5f1-44c3-a0e9-fd9b5ab54bd2",
                     "name" : "applyCoupon",
                     "title" : "applyCoupon",
                     "type" : "region"
@@ -533,10 +534,10 @@
                         "textDisplayInfo" : "{\"headingTag\": \"p\", \"textStyle\": \"body-regular\"}"
                       },
                       "definition" : "dxp_base:textBlock",
-                      "id" : "7fdc90c9-b2b7-4df4-ada7-fd3c2318923d",
+                      "id" : "c30d965a-5cd3-43e7-b585-c16ad8be374b",
                       "type" : "component"
                     } ],
-                    "id" : "aef9dd32-72c6-443b-9d0b-4f48b10e8af2",
+                    "id" : "7f524f67-28dc-4195-b12c-81e6db9da4ad",
                     "name" : "promotionsDisclaimer",
                     "title" : "Promotions Disclaimer Text",
                     "type" : "region"
@@ -588,10 +589,10 @@
                                 "url" : ""
                               },
                               "definition" : "dxp_base:button",
-                              "id" : "32791341-f3a7-415d-a193-82a54437e891",
+                              "id" : "e675ad2d-9bad-4baa-b130-44745adaeded",
                               "type" : "component"
                             } ],
-                            "id" : "521b0e32-954d-48be-8c23-a666a34e6464",
+                            "id" : "8c636860-6be1-4091-a45e-6460e8207819",
                             "name" : "termsAndConditions",
                             "title" : "Terms and Conditions ",
                             "type" : "region"
@@ -609,19 +610,19 @@
                                 "value" : "{!Promotion.discountAmount}"
                               },
                               "definition" : "commerce_builder:formattedCurrency",
-                              "id" : "05840678-62a3-46c5-8bf0-d7d8c0d5c7b9",
+                              "id" : "71d6ae4b-d738-4d92-bbb5-f82cfd7915cb",
                               "type" : "component"
                             } ],
-                            "id" : "8a0b0b4a-67c0-4f0b-bb14-f8dcf60b0774",
+                            "id" : "c181991c-3ad7-49ae-9a80-c187c0bfc066",
                             "name" : "discountAmount",
                             "title" : "discountAmount",
                             "type" : "region"
                           } ],
                           "definition" : "commerce_builder:cartAppliedPromotion",
-                          "id" : "e7b14ad5-6dc8-4b01-87a2-fed1875714b7",
+                          "id" : "a4caf7f3-bec8-4e6b-924a-1ec2bc1b5188",
                           "type" : "component"
                         } ],
-                        "id" : "483c4000-b93b-40b1-a17c-029e1e2745ff",
+                        "id" : "76b0356c-7315-465e-b0b8-fe2d979d4cca",
                         "name" : "sfdcRepeaterItem",
                         "title" : "sfdcRepeaterItem",
                         "type" : "region"
@@ -635,25 +636,25 @@
                             "children" : [ {
                               "attributes" : { },
                               "definition" : "dxp_page_layout:placeHolder",
-                              "id" : "85ffa16b-8dce-4b19-a006-47cf843cf8bb",
+                              "id" : "682eb59f-3c11-49e5-b28e-2cba44b87803",
                               "type" : "component"
                             } ],
-                            "id" : "32960ed0-7bbf-46ca-bf3d-76bcb3ab64db",
+                            "id" : "bc5cb766-a054-4793-b532-af79ca40fe37",
                             "name" : "placeholder",
                             "title" : "placeholder",
                             "type" : "region"
                           } ],
                           "definition" : "dxp_content_layout:paginator2",
-                          "id" : "7ea46698-6e39-4611-a2db-826f71301000",
+                          "id" : "b3faacbd-43d9-4dc6-9437-388dd71270e1",
                           "type" : "component"
                         } ],
-                        "id" : "ef562fb0-f7e2-4d9c-895a-95c27b153e64",
+                        "id" : "450000c8-09a8-4b40-be1d-1e3d33af32f4",
                         "name" : "pagination",
                         "title" : "pagination",
                         "type" : "region"
                       } ],
                       "definition" : "dxp_content_layout:list",
-                      "id" : "f15b019b-d5fc-4952-802c-00e1f432b1b5",
+                      "id" : "d4fcce21-eda9-4bf2-83c3-17ab17bb6f31",
                       "type" : "component",
                       "dataProviders" : [ {
                         "definition" : "sfdc_cms__expressionDataProvider",
@@ -663,13 +664,13 @@
                         }
                       } ]
                     } ],
-                    "id" : "83a63500-7df6-45f9-a5d8-f8677a685894",
+                    "id" : "926c7fbf-df2c-4180-972d-25a7594ee6fc",
                     "name" : "appliedPromotionRepeater",
                     "title" : "appliedPromotionRepeater",
                     "type" : "region"
                   } ],
                   "definition" : "commerce_builder:cartPromotions",
-                  "id" : "6110290e-e429-46c2-95ae-97995535b6c4",
+                  "id" : "7ecb4ddc-6704-4603-82e9-3226b2f23ae1",
                   "type" : "component"
                 }, {
                   "attributes" : {
@@ -695,7 +696,7 @@
                         "width" : "stretch"
                       },
                       "definition" : "commerce_builder:checkoutButton",
-                      "id" : "ebb9ce76-44f3-4726-bee8-b1e699d5901e",
+                      "id" : "d6f26ac5-92d5-471e-83cb-7ed8179c339b",
                       "type" : "component"
                     }, {
                       "attributes" : {
@@ -705,6 +706,7 @@
                         "cartId" : "{!Cart.Details.cartId}",
                         "descriptionLabel" : "Describe the reason for a new quote, include important information for us to consider your request.",
                         "dxpStyle" : {
+                          "isVisible" : false,
                           "margin" : {
                             "bottom" : "0%",
                             "left" : "0%",
@@ -728,37 +730,37 @@
                         "width" : "stretch"
                       },
                       "definition" : "commerce_builder:quoteRequestButton",
-                      "id" : "246df1a3-61cb-44e3-aa76-179d43453bf2",
+                      "id" : "d55bd2db-c889-448f-9d25-acbcff79c25b",
                       "type" : "component"
                     } ],
-                    "id" : "db50af00-0b5b-4467-a414-e9821620a26d",
+                    "id" : "43531b2c-ecb6-48cb-83d1-2128e4b30794",
                     "name" : "content",
                     "title" : "content",
                     "type" : "region"
                   } ],
                   "definition" : "commerce_builder:stickyContainer",
-                  "id" : "e938c396-d89d-42b3-8f82-71636ccc76f9",
+                  "id" : "d260cf23-da70-4720-a6d1-95ceea7ae025",
                   "type" : "component"
                 } ],
-                "id" : "46901a40-276f-4090-b8e4-886694789053",
+                "id" : "f5dc261a-b918-435c-b39e-1cc8db29169c",
                 "name" : "content",
                 "title" : "content",
                 "type" : "region"
               } ],
               "definition" : "commerce_builder:stickyContainer",
-              "id" : "8473cad3-6430-4af3-b08f-e47ad82a8d8a",
+              "id" : "b5a5fee3-7eda-457b-aefd-cefe44e41c27",
               "type" : "component"
             } ],
-            "id" : "a409a30a-c5d7-443a-8929-46ea836c3b9c",
+            "id" : "af6ac80f-082d-44c9-abc6-672379f83ac2",
             "name" : "col3",
             "title" : "Column 3",
             "type" : "region"
           } ],
           "definition" : "community_layout:section",
-          "id" : "bf06de6d-37ff-4a02-bcec-7448cd3f2b2e",
+          "id" : "92f721ae-f403-4000-96e7-7dfa98401878",
           "type" : "component"
         } ],
-        "id" : "0f8e4d75-2805-4644-ac88-b9142874fd97",
+        "id" : "75520fc0-d4f7-4a48-add0-df346dbc2b03",
         "name" : "content",
         "title" : "Content",
         "type" : "region"
@@ -768,16 +770,16 @@
             "recordId" : "{!recordId}"
           },
           "definition" : "community_builder:seoAssistant",
-          "id" : "ca195855-5777-49c9-a97c-138d7d1fde4f",
+          "id" : "7743fc1c-6fc4-42dd-bfb4-3a2873b4b46f",
           "type" : "component"
         } ],
-        "id" : "10333717-c51a-4b82-870a-bdce00dfccbf",
+        "id" : "5bbe3438-4765-4d3c-a926-05bc1511dc02",
         "name" : "sfdcHiddenRegion",
         "title" : "sfdcHiddenRegion",
         "type" : "region"
       } ],
       "definition" : "community_layout:sldsFlexibleLayout",
-      "id" : "bdad5148-9eac-45bc-8f7f-335e970decda",
+      "id" : "1b6dcfcb-e0e5-4fbb-93d3-62a67391b077",
       "type" : "component"
     },
     "dataProviders" : [ {
