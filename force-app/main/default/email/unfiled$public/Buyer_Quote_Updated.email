@@ -1,0 +1,24 @@
+<div style="font-family: Arial, sans-serif; font-size: 14px; line-height: 1.6; color: #333333; max-width: 600px; margin: 0 auto;">
+  <p>Hi {!BLANKVALUE(Quote.Contact, 'Customer')},</p>
+
+  <p>Your quote <strong>{!Quote.Name}</strong> (Quote #{!Quote.QuoteNumber}) has been updated by the seller.</p>
+
+  <table style="width: 100%; border-collapse: collapse; margin: 20px 0; background-color: #f9f9f9; padding: 15px; border-radius: 6px;">
+    <tr>
+      <td style="padding: 8px 12px; font-weight: bold; width: 30%;">Quote Number:</td>
+      <td style="padding: 8px 12px;">{!Quote.QuoteNumber}</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 12px; font-weight: bold;">Status:</td>
+      <td style="padding: 8px 12px;">{!Quote.Status}</td>
+    </tr>
+ 
+  </table>
+
+  <p>Please log in to your portal account to review the updated details, accept the quote, or request revisions.</p>
+
+  <p style="margin-top: 30px;">
+    Thank you,<br>
+    <strong>{!Organization.Name}</strong>
+  </p>
+</div>

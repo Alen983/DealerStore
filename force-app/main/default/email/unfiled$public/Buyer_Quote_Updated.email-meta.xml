@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Buyer Quote Updated</name>
+    <style>none</style>
+    <subject>Your Quote #{!Quote.QuoteNumber} has been updated</subject>
+    <textOnly>Dear {!Quote.Contact},  Your quote {!Quote.Name} (Quote #{!Quote.QuoteNumber}) has been updated by the seller.  Quote Total: {!Quote.GrandTotal}  Status: {!Quote.Status}  Please log in to your portal account to review and accept or request revisions.  Thank you</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
