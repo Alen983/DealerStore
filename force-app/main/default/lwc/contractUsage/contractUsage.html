@@ -1,0 +1,80 @@
+<template>
+
+    <lightning-card
+        title="Contract Usage"
+        icon-name="standard:contract">
+
+        <div class="container">
+
+            <template if:true={usage}>
+
+                <div class="stats">
+
+                    <div class="stat">
+
+                        <div class="stat-icon orders-icon">O</div>
+
+                        <div class="stat-text">
+
+                            <span>Orders</span>
+
+                            <strong>
+                                {usage.orderCount}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="stat-icon value-icon">$</div>
+
+                        <div class="stat-text">
+
+                            <span>Total Purchased</span>
+
+                            <strong>
+                                ${usage.totalValue}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <div class="stat-icon products-icon">P</div>
+
+                        <div class="stat-text">
+
+                            <span>Products Purchased</span>
+
+                            <strong>
+                                {usage.productCount}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+
+            <template if:true={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

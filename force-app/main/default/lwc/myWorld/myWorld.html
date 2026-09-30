@@ -1,0 +1,27 @@
+<template>
+<lightning-card title="myWorld">
+    <!-- <div>
+        <p>
+            hello world
+        </p>
+        <p>
+            {recordId}
+            {objectApiName}
+            {recordName}
+        </p>
+    </div> -->
+    <div>
+        <template iterator:it={names}>
+            <p key={it.value.id}>
+                {it.index}-{it.value.name}
+                <template if:true={it.first}>
+                    1st
+                </template>
+                <template if:true={it.last}>
+                    last
+                </template>
+                </p> </template>
+               
+        </div>
+</lightning-card>
+</template>

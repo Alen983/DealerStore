@@ -1,0 +1,173 @@
+:host {
+    --accent: #2e7d5b;
+    --accent-soft: #eaf6f0;
+    --ink: #14181a;
+    --muted: #6b7580;
+    --line: #eaecef;
+}
+
+.container {
+    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+    position: relative;
+    min-height: 100px;
+}
+
+
+/* Loading */
+
+.loading-container {
+    min-height: 160px;
+    position: relative;
+}
+
+
+/* Company Header */
+
+.company-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.company-header::before {
+    content: attr(data-initial);
+    flex: 0 0 auto;
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 0.9rem;
+    background: linear-gradient(135deg, var(--accent), #1f5c43);
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(46, 125, 91, 0.25);
+}
+
+.company-header-text {
+    padding-top: 0.15rem;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.25;
+    letter-spacing: -0.01rem;
+}
+
+.company-subtitle {
+    margin-top: 0.35rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+
+/* Contact Section */
+
+.section {
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    background: var(--accent-soft);
+    border-radius: 0.85rem;
+    border: 1px solid rgba(46, 125, 91, 0.12);
+}
+
+.section-title {
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.4rem;
+}
+
+.contact-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+
+/* Information Grid */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+}
+
+
+/* Individual Information */
+
+.info-item {
+    min-width: 0;
+    padding: 0.95rem 1.1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.info-item:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.35rem;
+}
+
+.value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+}
+
+
+/* Error */
+
+.error {
+    background: #fef1f1;
+    border: 1px solid #ea001e;
+    color: #ba0517;
+    padding: 0.9rem 1.1rem;
+    border-radius: 0.6rem;
+}
+
+
+/* Empty */
+
+.empty {
+    color: var(--muted);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 1.25rem 1rem 1.5rem 1rem;
+    }
+
+    .company-name {
+        font-size: 1.25rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

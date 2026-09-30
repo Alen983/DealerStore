@@ -1,0 +1,39 @@
+.container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.score-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.category {
+    margin-top: 1rem;
+}
+
+.hot,
+.warm,
+.cold {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.hot {
+    background: red;
+}
+
+.warm {
+    background: orange;
+}
+
+.cold {
+    background: blue;
+}
+
+.recommendation {
+    margin-top: 1rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,157 @@
+<template>
+
+    <lightning-card
+        title="Contract Access"
+        icon-name="standard:contract">
+
+        <div class="container">
+
+            <template if:true={loading}>
+
+                <div class="loading-container">
+
+                    <lightning-spinner
+                        alternative-text="Loading contract access">
+                    </lightning-spinner>
+
+                </div>
+
+            </template>
+
+
+            <template if:true={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+
+            <template if:true={access}>
+
+                <div class="header">
+
+                    <div class="header-text">
+
+                        <div class="company">
+                            {access.companyName}
+                        </div>
+
+                        <div class="contract-number">
+                            Contract <strong>{access.contractNumber}</strong>
+                        </div>
+
+                    </div>
+
+                    <div class={statusBadgeClass}>
+                        {access.contractStatus}
+                    </div>
+
+                </div>
+
+
+                <div class="grid">
+
+
+                    <!-- CONTRACT STATUS -->
+
+                    <div class="item">
+
+                        <div class="item-icon status-icon">S</div>
+
+                        <div class="item-text">
+
+                            <span>
+                                Contract Status
+                            </span>
+
+                            <strong>
+                                {access.contractStatus}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRICING -->
+
+                    <div class="item">
+
+                        <div class={pricingIconClass}>P</div>
+
+                        <div class="item-text">
+
+                            <span>
+                                Contract Pricing
+                            </span>
+
+                            <strong class={pricingTextClass}>
+                                {pricingLabel}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRICE BOOK -->
+
+                    <div class="item">
+
+                        <div class="item-icon book-icon">B</div>
+
+                        <div class="item-text">
+
+                            <span>
+                                Price Book
+                            </span>
+
+                            <strong>
+                                {displayPriceBook}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="item">
+
+                        <div class="item-icon terms-icon">T</div>
+
+                        <div class="item-text">
+
+                            <span>
+                                Purchasing Terms
+                            </span>
+
+                            <strong>
+                                {displayTerms}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="message">
+
+                    <span class="message-icon">✓</span>
+
+                    {access.accessMessage}
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

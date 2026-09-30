@@ -1,0 +1,229 @@
+<template>
+
+    <lightning-card
+        title="My Contract"
+        icon-name="standard:contract">
+
+        <div class="container">
+
+            <template lwc:if={loading}>
+
+                <div class="loading-container">
+
+                    <lightning-spinner
+                        alternative-text="Loading contract"
+                        size="small">
+                    </lightning-spinner>
+
+                </div>
+
+            </template>
+
+
+            <template lwc:if={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+
+            <template lwc:if={contract}>
+
+                <template lwc:if={hasContract}>
+
+                    <!-- HEADER -->
+
+                    <div class="header">
+
+                        <div class="header-text">
+
+                            <div class="company">
+                                {contract.accountName}
+                            </div>
+
+                            <div class="contract-number">
+                                Contract Number
+                                <strong>{contract.contractNumber}</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class={statusClass}>
+
+                            <span class="status-dot"></span>
+
+                            {statusLabel}
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTRACT DATES -->
+
+                    <div class="details">
+
+                        <div class="detail-item">
+
+                            <span>Status</span>
+
+                            <strong>
+                                {contract.status}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>Start Date</span>
+
+                            <strong>
+                                {contract.startDate}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>End Date</span>
+
+                            <strong>
+                                {contract.endDate}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>Days Remaining</span>
+
+                            <strong>
+                                {contract.daysRemaining}
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROGRESS -->
+
+                    <div class="progress-section">
+
+                        <div class="progress-header">
+
+                            <span>
+                                Contract Validity Remaining
+                            </span>
+
+                            <strong>
+                                {progressPercentLabel}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="progress-track">
+
+                            <div
+                                class="progress-bar"
+                                style={progressStyle}>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRICING -->
+
+                    <template lwc:if={pricingEnabled}>
+
+                        <div class="pricing">
+
+                            <span class="pricing-icon">✓</span>
+
+                            <div class="pricing-text">
+
+                                <strong>
+                                    Contract pricing enabled
+                                </strong>
+
+                                <template lwc:if={showPriceBookName}>
+
+                                    <span>
+                                        {contract.priceBookName}
+                                    </span>
+
+                                </template>
+
+                            </div>
+
+                        </div>
+
+                    </template>
+
+
+                    <!-- EXPIRING -->
+
+                    <template lwc:if={expiringSoon}>
+
+                        <div class="warning">
+
+                            <span class="warning-icon">⚠</span>
+
+                            Your contract expires in
+                            {contract.daysRemaining}
+                            days.
+
+                        </div>
+
+                    </template>
+
+
+                    <!-- EXPIRED -->
+
+                    <template lwc:if={isExpired}>
+
+                        <div class="expired">
+
+                            <span class="expired-icon">●</span>
+
+                            Your contract has expired.
+
+                        </div>
+
+                    </template>
+
+                </template>
+
+                <template lwc:else>
+
+                    <div class="no-contract">
+
+                        <strong>
+                            No Active Contract
+                        </strong>
+
+                        <p>
+                            Your account currently does not
+                            have an active contract.
+                        </p>
+
+                    </div>
+
+                </template>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

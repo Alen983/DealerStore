@@ -1,0 +1,159 @@
+:host {
+    --accent: #2e7d5b;
+    --accent-soft: #eaf6f0;
+    --warn: #a15c00;
+    --warn-soft: #fdf3e3;
+    --danger: #ba0517;
+    --danger-soft: #fef1f1;
+    --ink: #14181a;
+    --muted: #6b7580;
+    --line: #eaecef;
+}
+
+.container {
+    padding: 1.5rem;
+}
+
+
+/* Loading */
+
+.loading {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+/* Shared state box */
+
+.state-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border-radius: 0.9rem;
+    border: 1px solid var(--line);
+}
+
+.state-icon {
+    flex: 0 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.state-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+}
+
+.state-title {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.01rem;
+}
+
+.state-message {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.15rem;
+}
+
+
+/* Covered */
+
+.covered-box {
+    background: var(--accent-soft);
+    border-color: rgba(46, 125, 91, 0.2);
+}
+
+.covered-icon {
+    background: linear-gradient(135deg, var(--accent), #1f5c43);
+}
+
+.covered-title {
+    color: var(--accent);
+}
+
+.product-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--ink);
+}
+
+.contract-chip {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid rgba(46, 125, 91, 0.25);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.contract-chip strong {
+    font-weight: 800;
+}
+
+
+/* Not covered */
+
+.not-covered-box {
+    background: var(--warn-soft);
+    border-color: rgba(161, 92, 0, 0.2);
+}
+
+.not-covered-icon {
+    background: linear-gradient(135deg, #e5a000, #a15c00);
+}
+
+.not-covered-title {
+    color: var(--warn);
+}
+
+
+/* Error */
+
+.error-box {
+    background: var(--danger-soft);
+    border-color: rgba(186, 5, 23, 0.2);
+}
+
+.error-icon {
+    background: linear-gradient(135deg, #e0324a, var(--danger));
+}
+
+.error-title,
+.state-box.error-box .state-title {
+    color: var(--danger);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 1.1rem;
+    }
+
+    .state-box {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+}

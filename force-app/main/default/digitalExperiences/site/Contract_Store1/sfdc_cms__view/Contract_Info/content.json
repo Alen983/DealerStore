@@ -1,0 +1,122 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Contract Info",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"507dbd00-5735-4b62-ba5d-37222559a680\",\"columns\":[{\"UUID\":\"b8e526b3-63fc-4ec0-baa5-7b7145573dca\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"4\",\"seedComponents\":[]},{\"UUID\":\"9b8eb515-9cf0-4b05-8c9a-db34fe0317c7\",\"columnName\":\"Column 2\",\"columnKey\":\"0b2b4\",\"columnWidth\":\"4\",\"seedComponents\":[]},{\"UUID\":\"c692d73b-46cb-4163-8bae-bca55085eeb8\",\"columnName\":\"Column 3\",\"columnKey\":\"86379\",\"columnWidth\":\"4\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:contractStatusCard",
+              "id" : "0f5155d9-0a3d-4e95-8ada-b9d1544bf0fd",
+              "type" : "component"
+            } ],
+            "id" : "b8e526b3-63fc-4ec0-baa5-7b7145573dca",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:contractUsage",
+              "id" : "731769a2-9ff2-4cb5-8ce8-0d32783e7a98",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "c:myCompany",
+              "id" : "08328216-80b1-4b40-9ae3-c508d5270b54",
+              "type" : "component"
+            } ],
+            "id" : "9b8eb515-9cf0-4b05-8c9a-db34fe0317c7",
+            "name" : "0b2b4",
+            "title" : "Column 2",
+            "type" : "region"
+          }, {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:recentOrders",
+              "id" : "802f1d45-614a-4cfd-892a-e7012cbb29a1",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "c:contractAccess",
+              "id" : "ce09b104-20da-4eef-9c16-842256c06e84",
+              "type" : "component"
+            } ],
+            "id" : "c692d73b-46cb-4163-8bae-bca55085eeb8",
+            "name" : "86379",
+            "title" : "Column 3",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "507dbd00-5735-4b62-ba5d-37222559a680",
+          "type" : "component"
+        }, {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"2decc703-1f08-45ee-8eba-b01fc1a026aa\",\"columns\":[{\"UUID\":\"40316693-f8a9-49ef-b3ab-05c275f3a2c6\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "id" : "40316693-f8a9-49ef-b3ab-05c275f3a2c6",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "2decc703-1f08-45ee-8eba-b01fc1a026aa",
+          "type" : "component"
+        } ],
+        "id" : "56083cc6-9a6b-4b79-b63e-14b7c77bce39",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Contract Info",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "83da3175-9d1f-498b-b291-5334e6a39a0a",
+          "type" : "component"
+        } ],
+        "id" : "b3b8934c-d3c2-450d-86ef-876a7e3585c1",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "b823238b-65a6-49ba-b931-bc872b01fe24",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-contract-info"
+  },
+  "urlName" : "contract-info"
+}

@@ -1,0 +1,43 @@
+<template>
+
+    <lightning-card
+        title="My Company"
+        icon-name="standard:account">
+
+        <div class="container">
+
+            <template if:true={company}>
+
+                <h2>{company.companyName}</h2>
+
+                <div class="row">
+                    <span>Contact</span>
+                    <strong>{company.contactName}</strong>
+                </div>
+
+                <div class="row">
+                    <span>Email</span>
+                    <strong>{company.email}</strong>
+                </div>
+
+                <div class="row">
+                    <span>Phone</span>
+                    <strong>{company.phone}</strong>
+                </div>
+
+                <div class="row">
+                    <span>Industry</span>
+                    <strong>{company.industry}</strong>
+                </div>
+
+            </template>
+
+            <template if:true={error}>
+                <div class="error">{error}</div>
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

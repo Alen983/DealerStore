@@ -1,0 +1,233 @@
+:host {
+    --accent: #2e7d5b;
+    --accent-soft: #eaf6f0;
+    --warn: #a15c00;
+    --warn-soft: #fdf3e3;
+    --ink: #14181a;
+    --muted: #6b7580;
+    --line: #eaecef;
+}
+
+.container {
+    padding: 1.5rem;
+    position: relative;
+}
+
+
+/* Loading */
+
+.loading-container {
+    min-height: 160px;
+    position: relative;
+}
+
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.company {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.01rem;
+}
+
+.contract-number {
+    margin-top: 0.35rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.contract-number strong {
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.badge {
+    flex: 0 0 auto;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    white-space: nowrap;
+}
+
+.badge-active {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(46, 125, 91, 0.2);
+}
+
+.badge-draft {
+    background: var(--warn-soft);
+    color: var(--warn);
+    border: 1px solid rgba(161, 92, 0, 0.2);
+}
+
+.badge-neutral {
+    background: #f2f3f5;
+    color: var(--muted);
+    border: 1px solid var(--line);
+}
+
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.85rem;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.item:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.item-icon {
+    flex: 0 0 auto;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.status-icon {
+    background: linear-gradient(135deg, #3a6fd8, #2952a3);
+}
+
+.book-icon {
+    background: linear-gradient(135deg, #8a5cf6, #6338c4);
+}
+
+.terms-icon {
+    background: linear-gradient(135deg, #f08c3c, #c96a1f);
+}
+
+.pricing-on {
+    background: linear-gradient(135deg, var(--accent), #1f5c43);
+}
+
+.pricing-off {
+    background: linear-gradient(135deg, #9aa3ad, #6b7580);
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 0;
+}
+
+.item-text span {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+}
+
+.item-text strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+}
+
+.enabled {
+    color: var(--accent);
+}
+
+.disabled {
+    color: var(--muted);
+}
+
+
+/* Message */
+
+.message {
+    margin-top: 1.5rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border: 1px solid rgba(46, 125, 91, 0.15);
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.message-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    flex: 0 0 auto;
+}
+
+
+/* Error */
+
+.error {
+    background: #fef1f1;
+    border: 1px solid #ea001e;
+    color: #ba0517;
+    padding: 0.9rem 1.1rem;
+    border-radius: 0.6rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 1.25rem 1rem;
+    }
+
+    .company {
+        font-size: 1.2rem;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+}

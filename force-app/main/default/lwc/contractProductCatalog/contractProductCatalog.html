@@ -1,0 +1,161 @@
+<template>
+
+    <lightning-card
+        title="Contract Product Catalog"
+        icon-name="standard:product">
+
+        <div class="container">
+
+            <template if:true={loading}>
+
+                <div class="loading-container">
+
+                    <lightning-spinner
+                        alternative-text="Loading catalog"
+                        size="small">
+                    </lightning-spinner>
+
+                </div>
+
+            </template>
+
+
+            <template if:true={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+
+            <template if:true={catalog}>
+
+                <template if:true={hasProducts}>
+
+                    <div class="header">
+
+                        <div class="header-text">
+
+                            <div class="summary">
+                                {headerSummary}
+                            </div>
+
+                            <template if:true={catalog.contractNumber}>
+
+                                <div class="contract-chip">
+                                    Contract <strong>{catalog.contractNumber}</strong>
+                                </div>
+
+                            </template>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="table-head">
+
+                        <div class="col col-product">Product</div>
+                        <div class="col col-sku">SKU</div>
+                        <div class="col col-reference">Reference</div>
+                        <div class="col col-contract">Contract</div>
+                        <div class="col col-savings">Savings</div>
+
+                    </div>
+
+
+                    <div class="rows">
+
+                        <template
+                            for:each={catalog.products}
+                            for:item="product">
+
+                            <div class="row" key={product.productId}>
+
+                                <div class="col col-product">
+
+                                    <div class="product-icon">P</div>
+
+                                    <span class="product-name">
+                                        {product.productName}
+                                    </span>
+
+                                </div>
+
+                                <div class="col col-sku">
+                                    {product.displaySku}
+                                </div>
+
+                                <div class="col col-reference">
+
+                                    <template if:true={product.showReferencePrice}>
+
+                                        <span class="reference-price">
+                                            ${product.formattedReferencePrice}
+                                        </span>
+
+                                    </template>
+
+                                    <template if:false={product.showReferencePrice}>
+
+                                        <span class="muted-dash">—</span>
+
+                                    </template>
+
+                                </div>
+
+                                <div class="col col-contract">
+                                    ${product.formattedContractPrice}
+                                </div>
+
+                                <div class="col col-savings">
+
+                                    <template if:true={product.hasSavings}>
+
+                                        <span class="savings-badge">
+                                            {product.formattedSavingsPercent}%
+                                        </span>
+
+                                    </template>
+
+                                    <template if:false={product.hasSavings}>
+
+                                        <span class="muted-dash">—</span>
+
+                                    </template>
+
+                                </div>
+
+                            </div>
+
+                        </template>
+
+                    </div>
+
+                </template>
+
+
+                <template if:false={hasProducts}>
+
+                    <template if:false={loading}>
+
+                        <template if:false={error}>
+
+                            <div class="empty">
+                                {catalog.message}
+                            </div>
+
+                        </template>
+
+                    </template>
+
+                </template>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

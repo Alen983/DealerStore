@@ -1,0 +1,104 @@
+<template>
+
+    <lightning-card
+        title="Recent Orders"
+        icon-name="standard:orders">
+
+        <div class="container">
+
+            <template if:true={hasOrders}>
+
+                <div class="table-head">
+
+                    <div class="col col-order">Order</div>
+                    <div class="col col-date">Date</div>
+                    <div class="col col-status">Status</div>
+                    <div class="col col-total">Total</div>
+
+                </div>
+
+
+                <div class="rows">
+
+                    <template
+                        for:each={orders}
+                        for:item="order">
+
+                        <div class="row" key={order.orderId}>
+
+                            <div class="col col-order">
+
+                                <div class="order-icon">#</div>
+
+                                <span class="order-number">
+                                    {order.orderNumber}
+                                </span>
+
+                            </div>
+
+                            <div class="col col-date">
+                                {order.orderDate}
+                            </div>
+
+                            <div class="col col-status">
+
+                                <span class={order.statusClass}>
+                                    {order.status}
+                                </span>
+
+                            </div>
+
+                            <div class="col col-total">
+                                ${order.total}
+                            </div>
+
+                        </div>
+
+                    </template>
+
+                </div>
+
+
+                <div class="footer">
+
+                    <button
+                        class="view-button"
+                        onclick={handleViewOrders}>
+
+                        View All Orders
+                        <span class="arrow">→</span>
+
+                    </button>
+
+                </div>
+
+            </template>
+
+
+            <template if:false={hasOrders}>
+
+                <template if:false={error}>
+
+                    <div class="empty">
+                        <div class="empty-icon">□</div>
+                        No orders found.
+                    </div>
+
+                </template>
+
+            </template>
+
+
+            <template if:true={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Cold Leads Queue</name>
+    <queueMembers>
+        <users>
+            <user>integration@00dg5000003svt3eak.com</user>
+            <user>issacsunnywork.8468f4261bd0@agentforce.com</user>
+            <user>epic.d8639dbb3396@orgfarm.salesforce.com</user>
+            <user>insightssecurity@00dg5000003svt3eak.com</user>
+            <user>testemployee@yourorg.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

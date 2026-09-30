@@ -1,0 +1,102 @@
+<template>
+
+    <lightning-card>
+
+        <div class="container">
+
+            <!-- Background Glow -->
+            <div class="bg-glow glow1"></div>
+            <div class="bg-glow glow2"></div>
+
+            <!-- Header -->
+            <div class="header">
+
+                <div class="logo-circle">
+                    ⚡
+                </div>
+
+                <h1>SmartLead AI</h1>
+
+                <p>
+                    Intelligent CRM Lead Capture Platform
+                </p>
+
+            </div>
+
+            <!-- Form -->
+            <div class="form-section">
+
+                <lightning-input
+                    label="First Name"
+                    placeholder="Enter first name"
+                    value={firstName}
+                    onchange={handleFirstName}>
+                </lightning-input>
+
+                <lightning-input
+                    label="Last Name"
+                    placeholder="Enter last name"
+                    value={lastName}
+                    onchange={handleLastName}>
+                </lightning-input>
+
+                <lightning-input
+                    label="Company"
+                    placeholder="Enter company name"
+                    value={company}
+                    onchange={handleCompany}>
+                </lightning-input>
+
+                <lightning-input
+                    type="email"
+                    label="Email"
+                    placeholder="Enter email"
+                    value={email}
+                    onchange={handleEmail}>
+                </lightning-input>
+
+                <lightning-input
+                    type="number"
+                    label="Employees"
+                    placeholder="Number of employees"
+                    value={employees}
+                    onchange={handleEmployees}>
+                </lightning-input>
+
+            </div>
+
+            <!-- Features -->
+            <div class="feature-tags">
+
+                <div class="tag">
+                    🔥 AI Scoring
+                </div>
+
+                <div class="tag">
+                    ⚡ Smart Routing
+                </div>
+
+                <div class="tag">
+                    📊 Automation
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <div class="button-container">
+
+                <button
+                    class="submit-btn"
+                    onclick={submitLead}>
+
+                    Submit Lead
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </lightning-card>
+
+</template>

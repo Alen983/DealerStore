@@ -1,0 +1,125 @@
+<template>
+
+    <lightning-card
+        title="Contract Product Information"
+        icon-name="standard:product">
+
+        <div class="container">
+
+
+            <!-- Loading -->
+
+            <template if:true={loading}>
+
+                <div class="loading">
+
+                    <lightning-spinner
+                        alternative-text="Checking contract"
+                        size="small">
+                    </lightning-spinner>
+
+                    <span>
+                        Checking product eligibility...
+                    </span>
+
+                </div>
+
+            </template>
+
+
+            <!-- Error -->
+
+            <template if:true={error}>
+
+                <div class="state-box error-box">
+
+                    <div class="state-icon error-icon">!</div>
+
+                    <div class="state-text">
+
+                        <div class="state-title">
+                            Unable to verify contract
+                        </div>
+
+                        <div class="state-message">
+                            {error}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+
+            <!-- Product is covered -->
+
+            <template if:true={covered}>
+
+                <div class="state-box covered-box">
+
+                    <div class="state-icon covered-icon">✓</div>
+
+                    <div class="state-text">
+
+                        <div class="state-title covered-title">
+                            Covered by Your Contract
+                        </div>
+
+                        <div class="product-name">
+                            {productInfo.productName}
+                        </div>
+
+                        <div class="contract-chip">
+                            Contract <strong>{productInfo.contractNumber}</strong>
+                        </div>
+
+                        <div class="state-message">
+                            {productInfo.message}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+
+            <!-- Product is NOT covered -->
+
+            <template if:true={notCovered}>
+
+                <div class="state-box not-covered-box">
+
+                    <div class="state-icon not-covered-icon">△</div>
+
+                    <div class="state-text">
+
+                        <div class="state-title not-covered-title">
+                            Not Covered
+                        </div>
+
+                        <template if:true={productInfo.productName}>
+
+                            <div class="product-name">
+                                {productInfo.productName}
+                            </div>
+
+                        </template>
+
+                        <div class="state-message">
+                            {productInfo.message}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+
+        </div>
+
+    </lightning-card>
+
+</template>

@@ -1,0 +1,163 @@
+<template>
+
+    <lightning-card
+        title="My Company"
+        icon-name="standard:account">
+
+        <div class="container">
+
+            <!-- Loading -->
+
+            <template if:true={loading}>
+
+                <div class="loading-container">
+
+                    <lightning-spinner
+                        alternative-text="Loading company information"
+                        size="small">
+                    </lightning-spinner>
+
+                </div>
+
+            </template>
+
+
+            <!-- Company -->
+
+            <template if:true={hasCompany}>
+
+                <div class="company-header" data-initial={companyInitial}>
+
+                    <div class="company-header-text">
+
+                        <div class="company-name">
+                            {company.companyName}
+                        </div>
+
+                        <div class="company-subtitle">
+                            Company & Contact Information
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Contact -->
+
+                <div class="section">
+
+                    <div class="section-title">
+                        Contact
+                    </div>
+
+                    <div class="contact-name">
+                        {displayContact}
+                    </div>
+
+                </div>
+
+
+                <!-- Information Grid -->
+
+                <div class="info-grid">
+
+
+                    <!-- Email -->
+
+                    <div class="info-item">
+
+                        <div class="label">
+                            Email
+                        </div>
+
+                        <div class="value">
+                            {displayEmail}
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="info-item">
+
+                        <div class="label">
+                            Phone
+                        </div>
+
+                        <div class="value">
+                            {displayPhone}
+                        </div>
+
+                    </div>
+
+
+                    <!-- Industry -->
+
+                    <div class="info-item">
+
+                        <div class="label">
+                            Industry
+                        </div>
+
+                        <div class="value">
+                            {displayIndustry}
+                        </div>
+
+                    </div>
+
+
+                    <!-- Website -->
+
+                    <div class="info-item">
+
+                        <div class="label">
+                            Website
+                        </div>
+
+                        <div class="value">
+                            {displayWebsite}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+
+
+            <!-- Error -->
+
+            <template if:true={error}>
+
+                <div class="error">
+                    {error}
+                </div>
+
+            </template>
+
+
+            <!-- No Company -->
+
+            <template if:false={hasCompany}>
+
+                <template if:false={loading}>
+
+                    <template if:false={error}>
+
+                        <div class="empty">
+                            No company information available.
+                        </div>
+
+                    </template>
+
+                </template>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+
+</template>

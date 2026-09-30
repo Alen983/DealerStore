@@ -1,0 +1,61 @@
+<template>
+
+    <template if:true={loading}>
+        <div class="price-container">
+            <lightning-spinner
+                alternative-text="Loading price"
+                size="small">
+            </lightning-spinner>
+        </div>
+    </template>
+
+
+    <template if:true={hasPricing}>
+
+        <div class="price-container">
+
+            <!-- Original / List Price -->
+            <template if:true={showListPrice}>
+                <span class="list-price">
+                    ${formattedListPrice}
+                </span>
+            </template>
+
+            <!-- Contract Price -->
+            <span class="contract-price">
+                ${formattedContractPrice}
+            </span>
+
+            <span class="contract-label">
+                ✓ Contract Price
+            </span>
+
+            <template if:true={showSavings}>
+                <div class="savings-row">
+                    <span class="savings-text">
+                        ✓ You save ${formattedSavingsAmount} ({formattedSavingsPercentage}%)
+                    </span>
+                </div>
+            </template>
+
+        </div>
+
+    </template>
+
+
+    <template if:true={error}>
+        <div class="price-error">
+            {error}
+        </div>
+    </template>
+
+
+    <!-- No pricing available for this product/customer -->
+
+    <template if:true={showNoPricing}>
+        <div class="price-empty">
+            {noPricingReason}
+        </div>
+    </template>
+
+</template>

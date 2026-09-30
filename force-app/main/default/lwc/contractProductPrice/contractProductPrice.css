@@ -1,0 +1,81 @@
+.price-container {
+    display: flex;
+    align-items: baseline;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+}
+
+
+/* Original price */
+
+.list-price {
+    font-size: 1rem;
+    color: #666;
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+
+
+/* Contract price */
+
+.contract-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #181818;
+}
+
+
+/* Contract label */
+
+.contract-label {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #017e42;
+    margin-top: -0.25rem;
+}
+
+
+.savings-row {
+    width: 100%;
+    margin-top: 0.15rem;
+}
+
+
+.savings-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #017e42;
+}
+
+
+.price-error {
+    font-size: 0.85rem;
+    color: #ba0517;
+    padding: 0.5rem 0;
+}
+
+
+/* No pricing state */
+
+.price-empty {
+    font-size: 0.85rem;
+    color: #706e6b;
+    padding: 0.5rem 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .contract-price {
+        font-size: 1.3rem;
+    }
+
+    .list-price {
+        font-size: 0.9rem;
+    }
+
+}
