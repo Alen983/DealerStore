@@ -1,0 +1,168 @@
+<template>
+
+    <div class="reorder-card">
+
+        <!-- Header -->
+        <div class="header">
+
+            <div>
+                <h2>Quick Reorder</h2>
+
+                <p class="subtitle">
+                    Reorder products based on your previous purchases
+                </p>
+            </div>
+
+            <span class="assistant-badge">
+                Reorder Assistant
+            </span>
+
+        </div>
+
+
+        <!-- Loading -->
+        <template if:true={isLoading}>
+
+            <div class="loading-message">
+                Finding recommendations for you...
+            </div>
+
+        </template>
+
+
+        <!-- Recommendation -->
+        <template if:true={preferredCategory}>
+
+            <div class="recommendation">
+
+                <div class="recommendation-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <p class="recommendation-title">
+                        Recommended for you
+                    </p>
+
+                    <p class="recommendation-text">
+                        Based on your previous purchases, we found
+                        products from your preferred category:
+                        <strong>{preferredCategory}</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Products -->
+            <template if:true={products.length}>
+
+                <div class="products-section">
+
+                    <div class="section-title">
+                        Recommended Products
+                    </div>
+
+
+                    <template
+                        for:each={products}
+                        for:item="product"
+                    >
+
+                        <div
+                            class="product-row"
+                            key={product.productId}
+                        >
+
+                            <!-- Product information -->
+                            <div class="product-info">
+
+                                <div class="product-icon">
+                                    🛍
+                                </div>
+
+                                <div>
+
+                                    <div>
+                                        {product.name}
+                                    </div>
+
+                                    <div class="product-price">
+                                        <lightning-formatted-number
+                                            value={product.price}
+                                            format-style="currency"
+                                            currency-code="INR">
+                                        </lightning-formatted-number>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Quantity -->
+                            <div class="quantity-section">
+
+                                <label>
+                                    Quantity
+                                </label>
+
+                                <input
+                                    type="number"
+                                    value="1"
+                                    min="1"
+                                    class="quantity-input"
+                                />
+
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="action-section">
+
+                                <button
+                                    class="add-button"
+                                    data-product-id={product.id}
+                                    data-product-name={product.name}
+                                    onclick={handleViewProduct}
+                                >
+                                    View Product
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </template>
+
+                </div>
+
+            </template>
+
+
+            <!-- Footer -->
+            <div class="footer">
+
+                <span>
+                    Showing recommendations based on your purchase history
+                </span>
+
+            </div>
+
+        </template>
+
+
+        <!-- Error -->
+        <template if:true={errorMessage}>
+
+            <div class="error-message">
+                {errorMessage}
+            </div>
+
+        </template>
+
+    </div>
+
+</template>
