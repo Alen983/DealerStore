@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recurring_Contract__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Recurring Contract</label>
+    <referenceTo>Recurring_Contract__c</referenceTo>
+    <relationshipLabel>Recurring Contract Line Items</relationshipLabel>
+    <relationshipName>Recurring_Contract_Line_Items</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

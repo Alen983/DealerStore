@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="My Orders">
+        <div class="slds-p-around_medium">
+
+            <template if:true={orders.length}>
+                <template for:each={orders} for:item="order">
+                    <div key={order.orderSummaryId} class="slds-box slds-m-bottom_small slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+
+                        <div>
+                            <p class="slds-text-heading_small">Order: {order.orderNumber}</p>
+                            <p class="slds-text-body_small slds-text-color_weak">
+                                {order.formattedDate} &nbsp;·&nbsp; {order.status} &nbsp;·&nbsp; ${order.totalAmount}
+                            </p>
+                        </div>
+
+                        <lightning-button
+                            label="Recur This Order"
+                            variant="brand"
+                            data-order-id={order.orderSummaryId}
+                            onclick={handleRecurOrder}>
+                        </lightning-button>
+
+                    </div>
+                </template>
+            </template>
+
+            <template if:true={error}>
+                <p class="slds-text-color_error">Unable to load orders.</p>
+            </template>
+
+            <template if:false={orders.length}>
+                <template if:false={error}>
+                    <p class="slds-text-body_regular slds-text-color_weak">No orders found.</p>
+                </template>
+            </template>
+
+        </div>
+    </lightning-card>
+
+    <template if:true={showFlow}>
+        <lightning-flow
+            flow-api-name="B2B_Screen_Enhanced"
+            flow-input-variables={flowInputVariables}
+            onstatuschange={handleFlowStatusChange}>
+        </lightning-flow>
+    </template>
+</template>
